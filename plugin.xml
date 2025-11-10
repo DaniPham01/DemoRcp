@@ -1,0 +1,2961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="phulimex_01.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="editors.ParameterConfigurations"
+            icon="icons/PA.png"
+            id="phulimex.editor.ParameterConfiguration"
+            name="Analysis Parameters">
+      </editor>
+      <editor
+            class="editors.FITCharacteristic"
+            default="false"
+            icon="icons/FIT.png"
+            id="phulimex.editor.FitCharacteristic"
+            name="FIT Characteristics">
+      </editor>
+      <editor
+            class="editors.FaultCharacterisations"
+            default="true"
+            icon="icons/fault.png"
+            id="phulimex.editor.FaultCharacterisations"
+            name="Fault Characterisations">
+      </editor>
+      <editor
+            class="editors.HWDescription"
+            icon="icons/HD.png"
+            id="phulimex.editors.HardwareDescription"
+            name="HW Description">
+      </editor>
+      <editor
+            class="editors.SafetyMechanisms"
+            default="false"
+            icon="icons/SM.png"
+            id="com.editor.SafetyMechanisms"
+            name="Safety Mechanisms">
+      </editor>
+      <editor
+            class="editors.HardwareAnalysis"
+            default="false"
+            icon="icons/HA.png"
+            id="phulimex.editor.HardwareAnalysis"
+            name="HW Analysis Fault Impact">
+      </editor>
+      <editor
+            class="editors.AnalysisResultEditor"
+            default="true"
+            icon="icons/AR.png"
+            id="CAR Tool.Analysis_result"
+            name="Analysis Results">
+      </editor>
+      <editor
+            class="editors.CoverSheet"
+            default="false"
+            icon="icons/cover-sheet.png"
+            id="com.editor.CoverSheet"
+            name="Coversheet">
+      </editor>
+      <editor
+            class="editors.BarChart_PMHF"
+            default="false"
+            icon="icons/Bar-chart.png"
+            id="CAR Tool.barcharts"
+            name="PMHF Chart">
+      </editor>
+      <editor
+            class="editors.Stacked_LambdaChart"
+            default="false"
+            icon="icons/Bar-chart.png"
+            id="CAR Tool.lambdachart"
+            name="Lambda Chart">
+      </editor>
+      <editor
+            class="editors.AnalysisResult_MetricsChart"
+            default="false"
+            icon="icons/Bar-chart.png"
+            id="CAR Tool.AnalysisResult_metricschart"
+            name="Metrics Chart">
+      </editor>
+      <editor
+            class="editors.Stacked_LambdaChart_Horizantal"
+            default="false"
+            icon="icons/Bar-chart.png"
+            id="CAR Tool.lambdachart_Horizantal"
+            name="Lambda Chart">
+      </editor>
+      <editor
+            class="editors.AnalysisResult_Metrics_HorizantalChart"
+            default="false"
+            icon="icons/Bar-chart.png"
+            id="CAR Tool.AnalysisResult_metricschart_Horizantal"
+            name="Metrics Chart">
+      </editor>
+      <editor
+            class="editors.BarChart_PMHF_Horizantal"
+            default="false"
+            icon="icons/Bar-chart.png"
+            id="CAR Tool.barcharts_Horizantal"
+            name="PMHF Chart">
+      </editor>
+      <editor
+            class="editors.Variants"
+            icon="icons/Variants-20.png"
+            id="editors.Variants"
+            name="Variants">
+      </editor>
+      <editor
+            class="editors.Overview"
+            default="false"
+            icon="icons/overview_icon.png"
+            id="CAR Tool.overview"
+            name="Overview ">
+      </editor>
+      <editor
+            class="editors.AdminlevelAccess"
+            default="false"
+            icon="icons/Project/Permission.png"
+            id="AdminAccess"
+            name="Export Permission">
+      </editor>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="true"
+            class="views.HardwareElement"
+            icon="icons/HW.png"
+            id="car.view.HardwareElements"
+            name="Design Hierarchy"
+            restorable="true">
+  </view>
+      <view
+            class="views.AuditLogs"
+            icon="icons/audit.png"
+            id="car.view.AuditLogs"
+            name="Change History"
+            restorable="true">
+      </view>
+      <view
+            class="views.ErrorLogs"
+            icon="icons/log-20.png"
+            id="car.view.ErrorLogs"
+            name="Error Logs"
+            restorable="true">
+      </view>
+      <view
+            class="views.SaveSearchView"
+            icon="icons/saved-filter-20.png"
+            id="car.view.SaveSearchView"
+            name="Saved Filters"
+            restorable="true">
+      </view>
+      <view
+            class="views.FaultCharacterisation_FM"
+            icon="icons/fault.png"
+            id="car.view.FaultCharacterisation_FM"
+            name="FM List"
+            restorable="true">
+      </view>
+      <view
+            class="views.HardwareParts_SM"
+            icon="icons/SM.png"
+            id="car.views.HardwareParts"
+            name="Hardware Parts"
+            restorable="true">
+      </view>
+      <view
+            class="views.HardwareElementFuctionality_HD"
+            icon="icons/HD.png"
+            id="car.views.HardwareElementFuctionality"
+            name="Hardware Element Functionality"
+            restorable="true">
+      </view>
+      <view
+            class="views.FaultCoverage_HA"
+            icon="icons/HA.png"
+            id="car.view.faultcoverage"
+            name="HW Analysis Fault Coverage"
+            restorable="true">
+      </view>
+      <view
+            class="views.Analysis_Result"
+            icon="icons/AR.png"
+            id="com.view.lambdacontri"
+            name="Numerical Results"
+            restorable="true">
+      </view>
+      <view
+            class="views.Variant_TypeView"
+            icon="icons/Variants-20.png"
+            id="views.Variant_TypeView"
+            name="Element List">
+      </view>
+      <view
+            class="views.DocumentView"
+            icon="icons/document20.png"
+            id="views.DocumentView"
+            name="Documents">
+      </view>
+      <view
+            class="views.UsersInformationView"
+            icon="icons/license-icon-18.png"
+            id="CAR Tool.UsersInformationView"
+            name="Licence Controller"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         name="ShowCommand"
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="showview.command.HardwareElement"
+            id="CAR Tool.HardwareElementView"
+            name="Hardware Element">
+      </command>
+      <command
+            defaultHandler="showview.command.ErrorLogView"
+            id="CAR Tool.ErrorLogView"
+            name="Activate ELM">
+      </command>
+       <command
+            defaultHandler="handler.GotoHandler"
+            id="CAR Tool.goto"
+            name="Goto back">
+      </command>
+       <command
+            id="CAR Tool.undo"
+            name="Undo">
+      </command>
+      <!--Multiple Window-->
+      <command
+      		id="CAR Tool.NewWindow"
+      		name="New Window">
+      </command>
+      <command
+      		id="CAR Tool.SavePerspective"
+      		name="Save Perspective As">
+      </command>
+      <command
+      		id="CAR Tool.DeletePerspective"
+      		name="Delete Perspective">
+      </command>
+      <!--Multiple Window-->
+       <command
+           	id="CAR Tool.redo"
+            name="Redo">
+      </command>
+      <command
+            defaultHandler="showview.command.SavedSearchViewHandler"
+            id="CAR Tool.SavedSearchViewHandler"
+            name="Activate SFM">
+      </command>
+      <command
+            defaultHandler="handler.SafetyMechanismsHandler"
+            id="CAR Tool.SafetyMechanismsEditor"
+            name="Safety Mechanisms">
+      </command>
+      <command
+            defaultHandler="handler.ParameterConfigurationHandler"
+            id="CAR Tool.ParameterConfigurationEditor"
+            name="Analysis Parameters">
+      </command>
+      <command
+            defaultHandler="handler.HardwareAnalysisHandler"
+            id="CAR Tool.HardwreAnalysisEditor"
+            name="Hardwre Analysis">
+      </command>
+      <command
+            defaultHandler="handler.HardwareDescriptionHandler"
+            id="CAR Tool.HardwareDescriptionEditor"
+            name="Hardware Description">
+      </command>
+      <command
+            defaultHandler="handler.FITCharacteristicsHandler"
+            id="CAR Tool.FITCharacteristics"
+            name="FIT Characteristics">
+      </command>
+      <command
+            defaultHandler="handler.FaultCharacterisationsHandler"
+            id="CAR Tool.FaultCharacterisations"
+            name="Fault Characterisation">
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResultHandler"
+            id="CAR Tool.AnalysisResultEditor"
+            name="Activate ARM">
+      </command>
+      <command
+            id="CAR Tool.FilterColumn"
+            name="Filter Column">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            id="CAR Tool.refresh"
+            name="Refresh">
+      </command>
+      
+       <command
+            id="CAR Tool.Checkspell"
+            name="Check spell">
+      </command>
+      
+      <command
+            id="CAR Tool.FilterColumn1"
+            name="Filter Column1">
+      </command>
+      <command
+            defaultHandler="handler.DesignHierarchyHandler"
+            id="CAR Tool.DesignHierarchy"
+            name="Design Hierarchy">
+      </command>
+      <command
+            id="CAR Tool.command1"
+            name="Name">
+      </command>
+      <command
+            defaultHandler="showview.command.AuditLogView"
+            id="CAR Tool.AuditLogView"
+            name="Audit Log">
+      </command>
+      <command
+            defaultHandler="handler.DesignHierarchyDigramHandler"
+            id="CAR Tool.DesignHierarchyDigramHandler"
+            name="Design Hierarchy Diagram">
+      </command>
+      <command
+            id="CAR Tool.addFilter"
+            name="Create Filter">
+      </command>
+      <command
+            defaultHandler="handler.OverviewHandler"
+            id="CAR Tool.overviewHandler"
+            name="Overview">
+      </command>
+      <command
+            defaultHandler="handler.NewProjectHandler"
+            id="CAR Tool.NewProjectComand"
+            name="New Project">
+      </command>
+      <command
+            defaultHandler="handler.OpenProjectHandler"
+            id="CAR Tool.OpenProjectComand"
+            name="Open Project">
+      </command>
+      <command
+            defaultHandler="handler.DeleteProjectHandler"
+            id="CAR Tool.DeleteProjectComand"
+            name="Delete Project">
+      </command>
+      <command
+            defaultHandler="handler.AdminAccessHandler"
+            id="CAR Tool.AdminAccesscommand"
+            name="Admin Access">
+      </command>
+      <command
+            defaultHandler="handler.SaveasProjectHandler"
+            id="CAR Tool.SaveasProjectComand"
+            name="Save As Project">
+      </command>
+      <command
+            defaultHandler="handler.RenameProjectHandler"
+            id="CAR Tool.RenameProjectComand"
+            name="Rename Project ">
+      </command>
+      <command
+            id="CAR Tool.EmbeddedComand"
+            name="Licence Controller">
+      </command>
+      <command
+            id="CAR Tool.embedded_controller_refresh"
+            name="Embadded Controller">
+      </command>
+      <command
+            defaultHandler="handler.OpenLibraryHandler"
+            id="CAR Tool.openlibrary"
+            name="Open Library">
+      </command>
+      <command
+            defaultHandler="showview.command.Document"
+            id="CAR Tool.DocumentViewOpenCommand"
+            name="Documents">
+      </command>
+      <command
+            id="CAR Tool.QuickeditCommand"
+            name="Quick edit">
+      </command>
+       <!--P3R122-->
+      <command
+            id="CAR Tool.AutoRefreshCommand"
+            name="Refresh Automatic">
+            <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:true"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <!--P3R122-->
+      <command
+            id="CAR Tool.ManualRefreshCommand"
+            name="Refresh Manually">
+            <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <!--P3R122-->
+      <command
+            id="CAR Tool.DataChangeAutoCommand"
+            name="Refresh Automatic">
+            <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:true"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <!--P3R122-->
+      <command
+            id="CAR Tool.DataChangeManualCommand"
+            name="Refresh Manually">
+            <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+         <!--P3R32-->
+      <command
+            id="CAR Tool.LineWrapCommand"
+            name="Wrap Lines">
+            <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:true"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+       <command
+            id="CAR Tool.LineUnWrapCommand"
+            name="UnWrap Lines">
+            <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <!--P3R32-->
+      
+      <!--P3R219-->
+      <command
+            id="CAR Tool.AutoSizeCommand"
+            name="Auto Size">
+            <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <!--P3R219-->
+      
+      <command
+            defaultHandler="handler.ConcurrentFunctionalityViewHandler"
+            id="CAR Tool.concurrentview"
+            name="Concurrent Functionality">
+      </command>
+      <command
+            id="CAR Tool.BackupData"
+            name="Backup Data">
+      </command>
+      <command
+            id="CAR Tool.RestoreData"
+            name="Restore Data">
+      </command>
+      <command
+            id="CAR Tool.MigrateData"
+            name="Migrate Data">
+      </command>
+      <command
+            defaultHandler="handler.FunctionalityLabelListHandler"
+            id="CAR Tool.ListofLabelFunctionality"
+            name="Functionality Label">
+      </command>
+      <command
+            id="Seperator"
+            name="Seperator">
+      </command>
+      <command
+            defaultHandler="handler.TooltipFocus"
+            id="CAR Tool.ToolTipFocus"
+            name="Focus on Tool-tip">
+      </command>
+      <command
+            defaultHandler="handler.TooltipOpen"
+            id="CAR Tool.ToolTipOpen"
+            name="Show Tool-tip">
+      </command>
+      <command
+            defaultHandler="handler.AutofillClose"
+            id="CAR Tool.AutofillClose"
+            name="Autofill - Reject all suggestions">
+      </command>
+      <command
+            id="CAR Tool.blankHandler"
+            name="Blank">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="handler.ParameterConfigurationHandler"
+            id="CAR Tool.ParameterConfigurationcommand"
+            name="Activate PAM">
+      </command>
+      <command
+            defaultHandler="handler.FITCharacteristicsHandler"
+            id="CAR Tool.FITCharacteristicscommand"
+            name="Activate FSM">
+      </command>
+      <command
+            defaultHandler="handler.FaultCharacterisationsHandler"
+            id="CAR Tool.FaultCharacterisationscommand"
+            name="Activate FDM">
+      </command>
+      <command
+            defaultHandler="handler.HardwareDescriptionHandler"
+            id="CAR Tool.HWDescriptioncommand"
+            name="Activate HDM">
+      </command>
+      
+	  <command
+		    defaultHandler="handler.RestartHandler"
+		    id="CAR Tool.Restartcommand"
+		    name="Restart the Tool">
+      </command>
+      
+  	  <command
+	    defaultHandler="handler.RefreshHandler"
+	    id="CAR Tool.Refreshcommand"
+	    name="Refresh module">
+      </command>
+      
+      <command
+            defaultHandler="handler.SafetyMechanismsHandler"
+            id="CAR Tool.SafetyMechanismscommand"
+            name="Activate SMM">
+      </command>
+      <command
+            defaultHandler="handler.HardwareAnalysisHandler"
+            id="CARTool.HardwareAnalysiscommand"
+            name="Activate FIM">
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResultHandler"
+            id="CAR Tool.AnalysisResultcommand"
+            name="Analysis Result">
+      </command>
+      <command
+            id="CAR Tool.Import"
+            name="Import">
+      </command>
+      <command
+            id="CAR Tool.assignFIT"
+            name="Assign FIT">
+      </command>
+      <command
+            id="CAR Tool.Deletecommand"
+            name="Delete Selected Entries">
+      </command>
+      <command
+            id="CAR Tool.Add"
+            name="Add new Entry in active module">
+      </command>
+     <command
+           defaultHandler="handler.ScreenShotHandler"
+           id="CAR Tool.Screenshot"
+           name="Screenshot">
+     </command>
+     <command
+           id="CAR Tool.FullScreenshot"
+           name="Full Screenshot">
+     </command>
+ <command
+           defaultHandler="handler.ExportScreenShotXlsHandler"
+           id="CAR Tool.ExportToXls"
+           name="Export To XLS">
+     </command>
+     <command
+           id="CAR Tool.ExportToPDF"
+           name="Export To PDF">
+     </command>
+      <command
+            defaultHandler="handler.CoverSheetHandler"
+            id="CAR Tool.CoverSheetcommand"
+            name="Activate CSM">
+      </command>
+      <command
+            id="CAR Tool.Copy"
+            name="Copy">
+      </command>
+      <command
+            id="CAR Tool.Paste"
+            name="Paste">
+      </command>
+      <command
+            id="CAR Tool.Cut"
+            name="Cut">
+      </command>
+      <command
+            id="CAR Tool.rename"
+            name="Modify cell content">
+      </command>
+
+      <command
+            id="CAR Tool.customColumn"
+            name="Custom column">
+      </command>
+      <command
+            defaultHandler="handler.RemoveFilterHandler"
+            id="CAR Tool.removeFilter"
+            name="Remove Filter">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:true"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResult_BarchartHandler"
+            id="CAR Tool.AnalysisResult_barchartcommand"
+            name="Bar Charts">
+      </command>
+      
+      <command
+            id="CAR Tool.export_Handler"
+            name="Export">
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResult_LambdaChartHandler"
+            id="CAR Tool.AnalysisResult_lambdachartcommand"
+            name="Lambda Charts">
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResult_MetricsChartHandler"
+            id="CAR Tool.AnalysisResult_metricschartcommand"
+            name="Metrics Charts">
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResult_Barchart_HorizantalHandler"
+            id="CAR Tool.AnalysisResult_barchart_Horizantalcommand"
+            name="Bar Charts">
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResult_Metrics_HorizantalChartHandler"
+            id="CAR Tool.AnalysisResult_metricschart_Horizantalcommand"
+            name="Metrics Charts">
+      </command>
+      <command
+            defaultHandler="handler.AnalysisResult_Lambda_HorizantalChartHandler"
+            id="CAR Tool.AnalysisResult_lambdachart_Horizantalcommand"
+            name="Lambda Charts">
+      </command>
+      <command
+            defaultHandler="handler.VariantsHandler"
+            id="CAR Tool.Variants"
+            name="Activate VAM">
+      </command>
+      <command
+            defaultHandler="handler.ExportDFAHandler"
+            id="CAR Tool.ExportDFA"
+            name="Export DFA">
+      </command>
+	  <command
+	    defaultHandler="handler.ExportSYSHandler"
+	    id="CAR Tool.ExportSYS"
+	    name="Export SYS">
+      </command>
+      <command
+            defaultHandler="handler.TransientHandler"
+            id="CAR Tool.Type"
+            name="Transient">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="handler.PermanentHandler"
+            id="CAR Tool.Permanent"
+            name="Permanent">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:true"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      
+        <!--P3R119-->  
+       <command
+            defaultHandler="handler.AllHandler"
+            id="CAR Tool.Both"
+            name="ALL">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+          </command>
+      
+      <command
+            id="CAR Tool.export_html"
+            name="Export As HTML">
+      </command>
+      <command
+            id="CAR Tool.exportCSV"
+            name="Export As CSV">
+      </command>
+      <command
+            id="CAR Tool.exportTSV"
+            name="Export As TSV">
+      </command>
+      <command
+            defaultHandler="handler.ExportBlankTemplate"
+            id="CAR Tool.exportblanktemplate"
+            name="Export Blank Template">
+      </command>
+      <command
+            defaultHandler="handler.UpgradelibraryHandler"
+            id="CAR Tool.Upgradelibrary"
+            name="Update Library">
+      </command>
+      <command
+            defaultHandler="handler.UploadlibraryHandler"
+            id="CAR Tool.Uploadlibrary"
+            name="Upload Library">
+      </command>
+      <command
+            defaultHandler="handler.ExportLibraryHandler"
+            id="CAR Tool.export_library_Handler"
+            name="Export Library">
+      </command>
+      <command
+            id="CAR Tool.search"
+            name="Find">
+      </command>
+      <command
+            defaultHandler="handler.LibraryLicenseInformationHandler"
+            id="CAR Tool.LibraryLicenseInformation_Handler"
+            name="Library Licence Information">
+      </command>
+      <command
+            id="CAR Tool.exportonly"
+            name="Export Only">
+      </command>
+      <command
+            defaultHandler="handler.LfmHandler"
+            id="CAR Tool.LFM"
+            name="LFM Target">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="handler.SpfmHandler"
+            id="CAR Tool.SPFM"
+            name="SPFM Target">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            id="CAR Tool.ImageFullScreenshot"
+            name="Image Full Screenshot">
+      </command>
+      <command
+            id="CAR Tool.ExportToImage"
+            name="Export To Image">
+      </command>
+      <command
+            defaultHandler="handler.TabHandler"
+            id="CAR Tool.tabhandler"
+            name="Move Forward">
+      </command>
+      <command
+            defaultHandler="handler.ShiftTab"
+            id="CAR Tool.shifttabhandler"
+            name="Move Backward">
+      </command>
+      <command
+            id="CAR Tool.SnapsortHanlder"
+            name="Snapshot">
+      </command>
+      <command
+            defaultHandler="handler.ComponentChart"
+            id="CAR Tool.ComponentChart"
+            name="Entire Design">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="handler.SelectionChart"
+            id="CAR Tool.SelectionChart"
+            name="Selected Hierarchy">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            defaultHandler="handler.ElementChart"
+            id="CAR Tool.ElementChart"
+            name="Element">
+         <state
+               class="org.eclipse.ui.handlers.RegistryToggleState:false"
+               id="org.eclipse.ui.commands.toggleState">
+         </state>
+      </command>
+      <command
+            id="CAR Tool.Copy_EntireEntry"
+            name="Copy Entire Entry">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="Edit"
+               tooltip="Edit">
+            <command
+                  commandId="CAR Tool.Cut"
+                  icon="icons/cut.png"
+                  label="Cut"
+                  style="push"
+                  tooltip="Cut">
+               <visibleWhen
+                     checkEnabled="true">
+                  <with
+                        variable="activePart">
+                     <test
+                           property="properties.dfavisble">
+                     </test>
+                  </with>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="CAR Tool.Copy"
+                  icon="icons/copy.png"
+                  label="Copy Highlighted Cell Only"
+                  style="push"
+                  tooltip="Copy Highlighted Cell Only">
+            </command>
+            <command
+                  commandId="CAR Tool.Copy_EntireEntry"
+                  icon="icons/copy.png"
+                  label="Copy Entire Entry"
+                  style="push"
+                  tooltip="Copy Entire Entry">
+            </command>
+            <command
+                  commandId="CAR Tool.Paste"
+                  icon="icons/paste.png"
+                  label="Paste"
+                  style="push"
+                  tooltip="Paste">
+            </command>
+            <separator
+                  name="CAR Tool.separator3"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.Add"
+                  disabledIcon="icons/add_btn_disable.png"
+                  icon="icons/add_btn.png"
+                  label="Add New Entry"
+                  style="push"
+                  tooltip="Add New Entry">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.edit.delete"
+                  icon="icons/delete.png"
+                  label="Delete Selected Entries"
+                  style="push"
+                  tooltip="Delete Selected Entries">
+            </command>
+            <!--#SATYAM-->
+             <separator
+                  name="CAR Tool.separator4"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.undo"
+                  icon="icons/undo.png"
+                  label="Undo"
+                  style="push"
+                  tooltip="Undo operations">
+             </command>
+             <separator
+                  name="CAR Tool.separator5"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.redo"
+                  icon="icons/redo.png"
+                  label="Redo"
+                  style="push"
+                  tooltip="Redo operations">
+            </command>
+            <separator
+                  name="CAR Tool.separator6"
+                  visible="true">
+            </separator>
+            <!--#SATYAM-->
+         </menu>
+         <menu
+               label="Modules"
+               tooltip="Modules">
+            <command
+                  commandId="CAR Tool.EmbeddedComand"
+                  icon="icons/license-icon-18.png"
+                  label="Licence Controller"
+                  style="push"
+                  tooltip="Licence Controller">
+            </command>
+            <separator
+                  name="CAR Tool.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.CoverSheetcommand"
+                  icon="icons/cover-sheet.png"
+                  label="Coversheet"
+                  style="push"
+                  tooltip="Coversheet">
+            </command>
+            <command
+                  commandId="CAR Tool.ParameterConfigurationcommand"
+                  icon="icons/PA.png"
+                  label="Analysis Parameters"
+                  style="push"
+                  tooltip="Analysis Parameters">
+            </command>
+            <command
+                  commandId="CAR Tool.FITCharacteristicscommand"
+                  icon="icons/FIT.png"
+                  label="FIT Characteristics                  "
+                  style="push"
+                  tooltip="FIT Characteristics">
+            </command>
+            <command
+                  commandId="CAR Tool.FaultCharacterisationscommand"
+                  icon="icons/fault.png"
+                  label="Fault Characterisations          "
+                  style="push"
+                  tooltip="Fault Characterisations ">
+            </command>
+            <command
+                  commandId="CAR Tool.HWDescriptioncommand"
+                  icon="icons/HD.png"
+                  label="HW Description"
+                  style="push"
+                  tooltip="HW Description">
+            </command>
+            <command
+                  commandId="CAR Tool.SafetyMechanismscommand"
+                  icon="icons/SM.png"
+                  label="Safety Mechanisms"
+                  style="push"
+                  tooltip="Safety Mechanisms">
+            </command>
+            <command
+                  commandId="CARTool.HardwareAnalysiscommand"
+                  icon="icons/HA.png"
+                  label="HW Analysis"
+                  style="push"
+                  tooltip="HW Analysis">
+            </command>
+            <command
+                  commandId="CAR Tool.AnalysisResultEditor"
+                  icon="icons/AR.png"
+                  label="Analysis Results                     "
+                  style="push"
+                  tooltip="Analysis Results">
+            </command>
+            <command
+                  commandId="CAR Tool.Variants"
+                  icon="icons/Variants-20.png"
+                  label="Variants"
+                  style="push"
+                  tooltip="Variants">
+            </command>
+            <command
+                  commandId="CAR Tool.overviewHandler"
+                  icon="icons/overview_icon.png"
+                  label="Overview"
+                  style="push"
+                  tooltip="Overview">
+               <visibleWhen
+                     checkEnabled="true">
+                  <with
+                        variable="activeWorkbenchWindow">
+                     <test
+                           property="properties.overview">
+                     </test>
+                  </with>
+               </visibleWhen>
+            </command>
+            <separator
+                  name="CAR Tool.separator2"
+                  visible="true">
+            </separator>
+            <menu
+                  icon="icons/BAR.png"
+                  label="Charts"
+                  tooltip="Charts">
+               <menu
+                     icon="icons/Project/Vertical.png"
+                     label="Lambda"
+                     tooltip="Lambda">
+                  <command
+                        commandId="CAR Tool.AnalysisResult_lambdachartcommand"
+                        icon="icons/Project/Vertical.png"
+                        label="Vertical"
+                        style="push"
+                        tooltip="Vertical">
+                  </command>
+                  <command
+                        commandId="CAR Tool.AnalysisResult_lambdachart_Horizantalcommand"
+                        icon="icons/Project/Horizontal.png"
+                        label="Horizontal"
+                        style="push"
+                        tooltip="Horizontal">
+                  </command>
+               </menu>
+               <menu
+                     icon="icons/Project/Vertical.png"
+                     label="Metrics"
+                     tooltip="Metrics">
+                  <command
+                        commandId="CAR Tool.AnalysisResult_metricschartcommand"
+                        icon="icons/Project/Vertical.png"
+                        label="Vertical"
+                        style="push"
+                        tooltip="Vertical">
+                  </command>
+                  <command
+                        commandId="CAR Tool.AnalysisResult_metricschart_Horizantalcommand"
+                        icon="icons/Project/Horizontal.png"
+                        label="Horizontal"
+                        style="push"
+                        tooltip="Horizontal">
+                  </command>
+               </menu>
+               <menu
+                     icon="icons/Project/Vertical.png"
+                     label="PMHF"
+                     tooltip="PMHF">
+                  <command
+                        commandId="CAR Tool.AnalysisResult_barchartcommand"
+                        icon="icons/Project/Vertical.png"
+                        label="Vertical"
+                        style="pulldown"
+                        tooltip="Vertical">
+                  </command>
+                  <command
+                        commandId="CAR Tool.AnalysisResult_barchart_Horizantalcommand"
+                        icon="icons/Project/Horizontal.png"
+                        label="Horizontal"
+                        style="push"
+                        tooltip="Horizontal">
+                  </command>
+               </menu>
+            </menu>
+            <separator
+                  name="CAR Tool.sep"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.ErrorLogView"
+                  icon="icons/error.png"
+                  label="Error Logs"
+                  style="push"
+                  tooltip="Error Logs">
+            </command>
+            <command
+                  commandId="CAR Tool.AuditLogView"
+                  icon="icons/audit.png"
+                  label="Change History"
+                  style="push"
+                  tooltip="Change History">
+            </command>
+            <command
+                  commandId="CAR Tool.DocumentViewOpenCommand"
+                  icon="icons/document20.png"
+                  label="Documents"
+                  style="push"
+                  tooltip="Documents">
+            </command>
+            <command
+                  commandId="CAR Tool.SavedSearchViewHandler"
+                  icon="icons/saved-filter-20.png"
+                  label="Saved Filters"
+                  style="push"
+                  tooltip="Saved Filters">
+            </command>
+         </menu>
+           <!--P3R173-->
+           
+         <menu
+               label="Window">
+               
+      <!--Multiple Window-->
+            <command
+                  commandId="CAR Tool.NewWindow"
+                  label="New Window"
+                  style="push">
+            </command>
+      <!--Multiple Window-->
+            
+            <separator
+                  name="CAR Tool.separator3"
+                  visible="true">
+            </separator>
+            <menu
+                  label="Perspectives"
+                  >
+                  <dynamic
+                  class="main.PerspectiveSwitcherMenu"
+                  id="perspectiveSwitcherMenu">
+            </dynamic>
+            </menu>
+            <!--command
+                  commandId="org.eclipse.ui.window.customizePerspective"
+                  label="Customize Perspective"
+                  style="push"
+                  tooltip="Customize Perspective">
+            </command-->
+            <command
+                  commandId="CAR Tool.SavePerspective"
+                  label="Save Perspective As"
+                  style="push"
+                  tooltip="Save Perspective As">
+            </command>
+            <command
+                  commandId="CAR Tool.DeletePerspective"
+                  label="Delete Perspective"
+                  style="push"
+                  tooltip="Delete Perspective">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.window.resetPerspective"
+                  label="Reset Perspective"
+                  style="push"
+                  tooltip="Reset Perspective">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.window.closePerspective"
+                  label="Close Perspective"
+                  style="push"
+                  tooltip="Close Perspective">
+            </command>
+            <command
+                  commandId="org.eclipse.ui.window.closeAllPerspectives"
+                  label="Close All Perspectives"
+                  style="push"
+                  tooltip="Close All Perspectives">
+            </command>
+         </menu>
+         <!--/P3R173-->
+         <menu
+               label="Tools"
+               tooltip="Tools">
+            <menu
+                  commandId="CAR Tool.Screenshot"
+                  icon="icons/camera20x20.png"
+                  label="Screenshot"
+                  tooltip="Capture Screenshot">
+               <menu
+                     label="Active Module Screenshot"
+                     tooltip="Active Module Screenshot">
+                  <command
+                        commandId="CAR Tool.ExportToPDF"
+                        icon="icons/pdf_20.png"
+                        label="PDF"
+                        style="push"
+                        tooltip="PDF">
+                  </command>
+                  <command
+                        commandId="CAR Tool.ExportToImage"
+                        icon="icons/Active_image.png"
+                        label="Image"
+                        style="push"
+                        tooltip="Image">
+                  </command>
+               </menu>
+               <menu
+                     label="Full Screen Screenshot"
+                     tooltip="Full Screen Screenshot">
+                  <command
+                        commandId="CAR Tool.FullScreenshot"
+                        icon="icons/pdf_20.png"
+                        label="PDF"
+                        style="push"
+                        tooltip="PDF">
+                  </command>
+                  <command
+                        commandId="CAR Tool.ImageFullScreenshot"
+                        icon="icons/image_shot.png"
+                        label="Image"
+                        style="push"
+                        tooltip="Image">
+                  </command>
+               </menu>
+            </menu>
+            <command
+                  commandId="CAR Tool.search"
+                  icon="icons/search-binocular-20x20.png"
+                  label="Search"
+                  style="push"
+                  tooltip="Find and Replace">
+            </command>
+            <separator
+                  name="CAR Tool.separator6"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.FilterColumn"
+                  icon="icons/filter-play.png"
+                  label="Apply/Remove filter"
+                  style="toggle"
+                  tooltip="Apply/Remove filter">
+            </command>
+            <command
+                  commandId="CAR Tool.addFilter"
+                  icon="icons/filter-20x20.png"
+                  label="Filter"
+                  style="push"
+                  tooltip="Filter">
+            </command>
+            <separator
+                  name="CAR Tool.separator5"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.Permanent"
+                  icon="icons/Permanent-20.png"
+                  label="Permanent"
+                  style="toggle"
+                  tooltip="Permanent">
+            </command>
+            <command
+                  commandId="CAR Tool.Type"
+                  icon="icons/Transient-20.png"
+                  label="Transient"
+                  style="toggle"
+                  tooltip="Transient">
+            </command>
+             <command
+                  commandId="CAR Tool.Both"
+                  icon="icons/Transient-permanent-20.png"
+                  label="Both"
+                  style="toggle"
+                  tooltip="Both">
+            </command>
+            <separator
+                  name="CAR Tool.separator7"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.assignFIT"
+                  disabledIcon="icons/assign-value-20x20-gray.png"
+                  icon="icons/assign-value-20x20.png"
+                  label="Assign FIT Characteristic"
+                  style="push"
+                  tooltip="Assign FIT Characteristic">
+            </command>
+            <separator
+                  name="CAR Tool.separator8"
+                  visible="true">
+            </separator>
+            <menu
+                  icon="icons/Backup.png"
+                  label="Backup/Restore"
+                  tooltip="Backup/Restore">
+               <command
+                     commandId="CAR Tool.BackupData"
+                     icon="icons/BackupData.png"
+                     label="Backup Data"
+                     style="push"
+                     tooltip="Backup Data">
+               </command>
+               <command
+                     commandId="CAR Tool.RestoreData"
+                     icon="icons/RestoreData.png"
+                     label="Restore Data"
+                     style="push"
+                     tooltip="Restore Data">
+                </command>
+                <command
+                     commandId="CAR Tool.MigrateData"
+                     icon="icons/Migratedata.png"
+                     label="Migrate Data"
+                     style="push"
+                     tooltip="Migrate Data">
+               </command>
+            </menu>
+            <separator
+                  name="CAR Tool.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.concurrentview"
+                  icon="icons/concurrent_functionality-20.png"
+                  label="List of Concurrent Functionality"
+                  style="push"
+                  tooltip="List of Concurrent Functionality">
+            </command>
+            <command
+                  commandId="CAR Tool.ListofLabelFunctionality"
+                  icon="icons/label.png"
+                  label="List of Label Functionality"
+                  style="push"
+                  tooltip="List of Label Functionality">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="CAR Tool.toolbar1"
+               label="CAR Tool">
+            <command
+                  commandId="CAR Tool.Import"
+                  icon="icons/import_wiz.png"
+                  label="Import Data"
+                  style="push"
+                  tooltip="Import Data">
+            </command>
+            <command
+                  commandId="CAR Tool.blankHandler"
+                  icon="icons/export_wiz.png"
+                  label="Export"
+                  style="pulldown"
+                  tooltip="Export">
+            </command>
+             <command 
+             	commandId="CAR Tool.Add" 
+             	disabledIcon="icons/add_btn_disable.png" 
+             	icon="icons/add_btn.png" 
+             	label="Add New Entry" 
+             	style="push" 
+             	tooltip="Add New Entry" > 
+            </command> <command
+                  commandId="org.eclipse.ui.edit.delete"
+                  disabledIcon="icons/delete_disable.png"
+                  icon="icons/delete.png"
+                  label="Delete Selected Entries"
+                  style="push"
+                  tooltip="Delete Selected Entries">
+            </command>
+            <command
+                  commandId="CAR Tool.assignFIT"
+                  disabledIcon="icons/assign-value-20x20-gray.png"
+                  icon="icons/assign-value-20x20.png"
+                  label="Assign FIT Characteristic"
+                  style="push"
+                  tooltip="Assign FIT Characteristic">
+            </command>
+            <command
+                  commandId="CAR Tool.SnapsortHanlder"
+                  icon="icons/camera20x20.png"
+                  label="Screenshot"
+                  style="pulldown"
+                  tooltip="Screenshot">
+            </command>
+            <command
+                  commandId="CAR Tool.search"
+                  icon="icons/search-binocular-20x20.png"
+                  label="Search"
+                  style="push"
+                  tooltip="Find and Replace">
+            </command>
+            <command
+                  commandId="Seperator"
+                  icon="icons/separator.png"
+                  style="push">
+            </command>
+            <command
+                  commandId="CAR Tool.SavedSearchViewHandler"
+                  icon="icons/saved-filter-20.png"
+                  label="Saved Filters"
+                  style="push"
+                  tooltip="Saved Filters">
+            </command>
+            <command
+                  commandId="CAR Tool.FilterColumn"
+                  icon="icons/filter-play.png"
+                  label="Apply/Remove filter"
+                  style="toggle"
+                  tooltip="Apply/Remove filter">
+            </command>
+            <command
+                  commandId="CAR Tool.addFilter"
+                  icon="icons/filter-20x20.png"
+                  label="Create New Filter"
+                  style="push"
+                  tooltip="Create New Filter">
+            </command>
+            <command
+                  commandId="Seperator"
+                  icon="icons/separator.png"
+                  style="push">
+            </command>
+            <command
+                  commandId="CAR Tool.CoverSheetcommand"
+                  icon="icons/cover-sheet.png"
+                  label="Coversheet"
+                  style="push"
+                  tooltip="Coversheet">
+            </command>
+            <command
+                  commandId="CAR Tool.ParameterConfigurationcommand"
+                  icon="icons/PA.png"
+                  label="Analysis Parameters"
+                  style="push"
+                  tooltip="Analysis Parameters">
+            </command>
+            <command
+                  commandId="CAR Tool.FITCharacteristicscommand"
+                  icon="icons/FIT.png"
+                  label="FIT Characteristics"
+                  style="push"
+                  tooltip="FIT Characteristics">
+            </command>
+            <separator
+                  name="separator"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="CAR Tool.FaultCharacterisationscommand"
+                  icon="icons/fault.png"
+                  label="Fault Characterisations"
+                  style="push"
+                  tooltip="Fault Characterisations ">
+            </command>
+            <command
+                  commandId="CAR Tool.HWDescriptioncommand"
+                  icon="icons/HD.png"
+                  label="HW Description"
+                  style="push"
+                  tooltip="HW Description">
+            </command>
+            <command
+                  commandId="CAR Tool.SafetyMechanismscommand"
+                  icon="icons/SM.png"
+                  label="Safety Mechanisms"
+                  style="push"
+                  tooltip="Safety Mechanisms">
+            </command>
+            <command
+                  commandId="CARTool.HardwareAnalysiscommand"
+                  icon="icons/HA.png"
+                  label="HW Analysis"
+                  style="push"
+                  tooltip="HW Analysis">
+            </command>
+            <command
+                  commandId="CAR Tool.AnalysisResultEditor"
+                  icon="icons/AR.png"
+                  label="Analysis Results"
+                  style="push"
+                  tooltip="Analysis Results">
+            </command>
+            <command
+                  commandId="Seperator"
+                  icon="icons/separator.png"
+                  style="push">
+            </command>
+            <command
+                  commandId="CAR Tool.AnalysisResult_barchartcommand"
+                  disabledIcon="icons/BAR_Disabled.png"
+                  icon="icons/BAR.png"
+                  label="Charts"
+                  style="pulldown"
+                  tooltip="Charts">
+            </command>
+            <command
+                  commandId="CAR Tool.SPFM"
+                  icon="icons/Project/Vertical-01.png"
+                  label="SPFM Chart"
+                  style="toggle"
+                  tooltip="SPFM Chart">
+               <visibleWhen
+                     checkEnabled="true">
+                  <with
+                        variable="activeEditorId">
+                     <test
+                           property="properties.hideshowtarget">
+                     </test>
+                  </with>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="CAR Tool.LFM"
+                  icon="icons/Project/Vertical-02.png"
+                  label="LFM Chart"
+                  style="toggle"
+                  tooltip="LFM Chart">
+               <visibleWhen
+                     checkEnabled="true">
+                  <with
+                        variable="activeWorkbenchWindow">
+                     <test
+                           property="properties.hideshowtarget">
+                     </test>
+                  </with>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="CAR Tool.ComponentChart"
+                  icon="icons/componetChart.png"
+                  label="Entire Design"
+                  style="toggle"
+                  tooltip="Entire Design">
+               <visibleWhen
+                     checkEnabled="true">
+                  <with
+                        variable="activeEditorId">
+                     <test
+                           property="properties.hideandshowcomponentandselection">
+                     </test>
+                  </with>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="CAR Tool.SelectionChart"
+                  icon="icons/SelectionChart.png"
+                  label="Selected Hierarchy"
+                  style="toggle"
+                  tooltip="Selected Hierarchy">
+               <visibleWhen
+                     checkEnabled="true">
+                  <with
+                        variable="activeEditorId">
+                     <test
+                           property="properties.hideandshowcomponentandselection">
+                     </test>
+                  </with>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="CAR Tool.ElementChart"
+                  icon="icons/elementChart.png"
+                  label="Selected Elements"
+                  style="toggle"
+                  tooltip="Selected Elements">
+               <visibleWhen
+                     checkEnabled="true">
+                  <with
+                        variable="activeEditorId">
+                     <test
+                           property="properties.hideandshowcomponentandselection">
+                     </test>
+                  </with>
+               </visibleWhen>
+            </command>
+            <command
+                  commandId="Seperator"
+                  icon="icons/separator.png"
+                  style="push">
+            </command>
+            <command
+                  commandId="CAR Tool.Permanent"
+                  icon="icons/P-16.png"
+                  label="Permanent"
+                  style="toggle"
+                  tooltip="Permanent">
+            </command>
+            <command
+                  commandId="CAR Tool.Type"
+                  icon="icons/T-16.png"
+                  label="Transient"
+                  style="toggle"
+                  tooltip="Transient">
+            </command>
+          <!--P3R119-->  
+             <command
+                  commandId="CAR Tool.Both"
+                  icon="icons/Transient-permanent.png"
+                  label="Transient"
+                  style="toggle"
+                  tooltip="Both">
+            </command>
+              <!--P3R119-->  
+              <command
+                  commandId="Seperator"
+                  icon="icons/separator.png"
+                  style="push">
+            </command>
+            <command
+                  commandId="CAR Tool.QuickeditCommand"
+                  icon="icons/quick_edit20.png"
+                  label="Quick Edit"
+                  style="push"
+                  tooltip="Quick Edit">
+            </command>
+             <!--P3R122>  
+             <command
+                  commandId="Seperator"
+                  icon="icons/separator.png"
+                  style="push">
+            </command>
+            <command
+                  commandId="CAR Tool.AutoRefreshCommand"
+                  icon="icons/Auto-20.png"
+                  label="Auto Refresh"
+                  style="toggle"
+                  tooltip="Auto Refresh">
+                  
+            </command>
+            <P3R122>  
+            <command
+                  commandId="CAR Tool.ManualRefreshCommand"
+                  icon="icons/manual-20.png"
+                  label="Manual Refresh"
+                  style="toggle"
+                  tooltip="Manual Refresh">
+            </command>
+            <P3R122>  
+            <command
+                  commandId="CAR Tool.DataChangeAutoCommand"
+                  icon="icons/green-20.png"
+                  label="Auto Refresh"
+                  style="toggle"
+                  tooltip="Auto Refresh">
+                  
+            </command>
+            <P3R122>  
+            <command
+                  commandId="CAR Tool.DataChangeManualCommand"
+                  icon="icons/red-20.png"
+                  label="Manual Refresh"
+                  style="toggle"
+                  tooltip="Manual Refresh">
+            </command>
+              <P3R32-->  
+             <command
+                  commandId="Seperator"
+                  icon="icons/separator.png"
+                  style="push">
+            </command>
+            <command
+                  commandId="CAR Tool.LineWrapCommand"
+                  icon="icons/text-wrap-18.png"
+                  label="Wrap Lines"
+                  style="toggle"
+                  tooltip="Wrap Lines">
+                  
+            </command>
+             <command
+                  commandId="CAR Tool.LineUnWrapCommand"
+                  icon="icons/text-unwrap-18.png"
+                  label="UnWrap Lines"
+                  style="toggle"
+                  tooltip="UnWrap Lines">
+                  
+            </command>
+            <!--P3R32--> 
+            
+            <!--P3R219-->
+            <command
+                  commandId="CAR Tool.AutoSizeCommand"
+                  icon="icons/autosize-18.png"
+                  label="Auto Size"
+                  style="toggle"
+                  tooltip="Auto Size">
+                  
+            </command>            
+            <!--P3R219-->
+            
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:CAR Tool.AnalysisResult_barchartcommand">
+         <menu
+               icon="icons/Project/Vertical.png"
+               label="Lambda"
+               tooltip="Lambda">
+            <command
+                  commandId="CAR Tool.AnalysisResult_lambdachartcommand"
+                  icon="icons/Project/Vertical.png"
+                  label="Vertical"
+                  style="push"
+                  tooltip="Vertical">
+            </command>
+            <command
+                  commandId="CAR Tool.AnalysisResult_lambdachart_Horizantalcommand"
+                  icon="icons/Project/Horizontal.png"
+                  label="Horizontal"
+                  style="push"
+                  tooltip="Horizontal">
+            </command>
+         </menu>
+         <menu
+               icon="icons/Project/Vertical.png"
+               label="Metrics"
+               tooltip="Metrics">
+            <command
+                  commandId="CAR Tool.AnalysisResult_metricschartcommand"
+                  icon="icons/Project/Vertical.png"
+                  label="Vertical"
+                  style="push"
+                  tooltip="Vertical">
+            </command>
+            <command
+                  commandId="CAR Tool.AnalysisResult_metricschart_Horizantalcommand"
+                  icon="icons/Project/Horizontal.png"
+                  label="Horizontal"
+                  style="push"
+                  tooltip="Horizontal">
+            </command>
+         </menu>
+         <menu
+               icon="icons/Project/Vertical.png"
+               label="PMHF"
+               tooltip="PMHF">
+            <command
+                  commandId="CAR Tool.AnalysisResult_barchartcommand"
+                  icon="icons/Project/Vertical.png"
+                  label="Vertical"
+                  style="pulldown"
+                  tooltip="Vertical">
+            </command>
+            <command
+                  commandId="CAR Tool.AnalysisResult_barchart_Horizantalcommand"
+                  icon="icons/Project/Horizontal.png"
+                  label="Horizontal"
+                  style="push"
+                  tooltip="Horizontal">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:CAR Tool.blankHandler">
+         <menu
+               icon="icons/ProductIcons/LOGO-16.png"
+               id="Export"
+               label="Export Data"
+               tooltip="Export">
+         </menu>
+         <command
+               commandId="CAR Tool.exportonly"
+               icon="icons/export_wiz.png"
+               label="Export Active Module"
+               style="push"
+               tooltip="Export Active Module">
+         </command>
+         <command
+               commandId="CAR Tool.exportblanktemplate"
+               icon="icons/template-20.png"
+               label="Export Reference Template"
+               style="push"
+               tooltip="Export Reference Template">
+         </command>
+         <command
+               commandId="CAR Tool.ExportDFA"
+               icon="icons/ExportDFA.png"
+               label="Export DFA"
+               style="push">
+            <visibleWhen
+                  checkEnabled="true">
+               <with
+                     variable="activePart">
+                  <test
+                        property="properties.dfavisble">
+                  </test>
+               </with>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="CAR Tool.ExportSYS"
+               icon="icons/ExportSYS.png"
+               label="Export SYS"
+               style="push">
+            <visibleWhen
+                  checkEnabled="true">
+               <with
+                     variable="activePart">
+                  <test
+                        property="properties.dfavisble">
+                  </test>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:Export">
+         <command
+               commandId="CAR Tool.export_Handler"
+               icon="icons/excel_18.png"
+               label="Export as Excel"
+               style="pulldown"
+               tooltip="Export as Excel">
+         </command>
+         <command
+               commandId="CAR Tool.export_html"
+               icon="icons/html-5-logo.png"
+               label="Export as HTML"
+               style="push"
+               tooltip="Export as HTML">
+         </command>
+         <command
+               commandId="CAR Tool.exportCSV"
+               icon="icons/CVS-18.png"
+               label="Export as CSV"
+               style="push"
+               tooltip="Export as CSV">
+         </command>
+         <command
+               commandId="CAR Tool.exportTSV"
+               icon="icons/TSV-18.png"
+               label="Export as TSV"
+               style="push"
+               tooltip="Export as TSV">
+         </command>
+      </menuContribution>
+         <menuContribution
+           allPopups="false"
+           locationURI="menu:CAR Tool.SnapsortHanlder">
+        <menu
+              label="Active Module Screenshot"
+              tooltip="Active Module Screenshot">
+           <command
+                 commandId="CAR Tool.ExportToPDF"
+                 icon="icons/pdf_20.png"
+                 label="PDF"
+                 style="push"
+                 tooltip="PDF">
+           </command>
+           <command
+                 commandId="CAR Tool.ExportToImage"
+                 icon="icons/Active_image.png"
+                 label="Image"
+                 style="push"
+                 tooltip="Image">
+           </command>
+        </menu>
+        <menu
+              label="Full Screen Screenshot"
+              tooltip="Full Screen Screenshot">
+           <command
+                 commandId="CAR Tool.FullScreenshot"
+                 icon="icons/pdf_20.png"
+                 label="PDF"
+                 style="push"
+                 tooltip="PDF">
+           </command>
+           <command
+                 commandId="CAR Tool.ImageFullScreenshot"
+                 icon="icons/image_shot.png"
+                 label="Image"
+                 style="push"
+                 tooltip="Image">
+           </command>
+        </menu>
+     </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="*">
+          <view
+                closeable="false"
+                id="car.view.HardwareElements"
+                minimized="true"
+                moveable="false"
+                ratio="0.20f"
+                relationship="left"
+                relative="org.eclipse.ui.editorss"
+                showTitle="true"
+                visible="true">
+         </view>
+         <view
+               closeable="true"
+               id="car.view.AuditLogs"
+               minimized="true"
+               moveable="true"
+               ratio="0.72f"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               visible="true">
+         </view>
+         <view
+               closeable="true"
+               id="car.view.ErrorLogs"
+               minimized="false"
+               moveable="true"
+               ratio="0.72f"
+               relationship="stack"
+               relative="car.view.AuditLogs"
+               showTitle="true"
+               visible="true">
+         </view>
+         <view
+               closeable="true"
+               id="car.view.SaveSearchView"
+               minimized="false"
+               moveable="true"
+               ratio="0.60f"
+               relationship="bottom"
+               relative="car.view.HardwareElements"
+               showTitle="true"
+               visible="false">
+         </view>
+         <view
+               closeable="true"
+               id="car.view.FaultCharacterisation_FM"
+               minimized="false"
+               moveable="true"
+               ratio="0.60f"
+               relationship="right"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               visible="false">
+         </view>
+         <view
+               closeable="true"
+               id="car.views.HardwareElementFuctionality"
+               minimized="true"
+               moveable="true"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               visible="false">
+         </view>
+         <view
+               closeable="true"
+               id="com.view.lambdacontri"
+               minimized="false"
+               moveable="true"
+               ratio="0.65f"
+               relationship="right"
+               relative="org.eclipse.ui.editorss"
+               visible="false">
+         </view>
+         <view
+               closeable="true"
+               id="car.view.faultcoverage"
+               minimized="false"
+               moveable="true"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss"
+               visible="false">
+         </view>
+         <view
+               closeable="true"
+               id="car.views.HardwareParts"
+               minimized="false"
+               moveable="true"
+               ratio="0.73f"
+               relationship="right"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               visible="false">
+         </view>
+         <view
+               closeable="true"
+               id="views.Variant_TypeView"
+               minimized="true"
+               moveable="true"
+               ratio="0.50f"
+               relationship="bottom"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               standalone="true"
+               visible="false">
+         </view>
+         <view
+               closeable="true"
+               id="views.DocumentView"
+               minimized="true"
+               moveable="true"
+               ratio="0.72f"
+               relationship="stack"
+               relative="car.view.ErrorLogs"
+               showTitle="true"
+               visible="true">
+         </view>
+         <view
+               closeable="true"
+               id="CAR Tool.UsersInformationView"
+               minimized="false"
+               moveable="true"
+               ratio="0.80f"
+               relationship="stack"
+               relative="org.eclipse.ui.editorss"
+               showTitle="true"
+               visible="false">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="CAR Tool.CoverSheetcommand"
+            schemeId="myscheme"
+            sequence="M1+M2+F1">
+      </key>
+      <key
+            commandId="CAR Tool.ParameterConfigurationcommand"
+            schemeId="myscheme"
+            sequence="M1+M2+F2">
+      </key>
+      
+      
+      <key
+            commandId="CAR Tool.FITCharacteristicscommand"
+            schemeId="myscheme"
+            sequence="M1+M2+F3">
+      </key>
+      <key
+            commandId="CAR Tool.FaultCharacterisationscommand"
+            schemeId="myscheme"
+            sequence="M1+M2+F4">
+      </key>
+      <key
+            commandId="CAR Tool.HWDescriptioncommand"
+            schemeId="myscheme"
+            sequence="M1+M2+F5">
+      </key>
+      <key
+            commandId="CAR Tool.Restartcommand"
+            schemeId="myscheme"
+            sequence="M1+M2+R">
+      </key>
+      
+      <key
+		    commandId="CAR Tool.Refreshcommand"
+		    schemeId="myscheme"
+		    sequence="F5">
+      </key>
+      
+      <key
+            commandId="CAR Tool.SafetyMechanismscommand"
+            schemeId="myscheme"
+            sequence="M1+M2+F6">
+      </key>
+      <key
+            commandId="CARTool.HardwareAnalysiscommand"
+            schemeId="myscheme"
+            sequence="M1+M2+F7">
+      </key>
+      <key
+            commandId="CAR Tool.AnalysisResultEditor"
+            schemeId="myscheme"
+            sequence="M1+M2+F8">
+      </key>
+      <key
+            commandId="CAR Tool.Variants"
+            schemeId="myscheme"
+            sequence="M1+M2+F9">
+      </key>
+      <key
+            commandId="CAR Tool.overviewHandler"
+            schemeId="myscheme"
+            sequence="M1+M2+F12">
+      </key>
+      <key
+            commandId="CAR Tool.SavedSearchViewHandler"
+            schemeId="myscheme"
+            sequence="M1+M2+F10">
+      </key>
+      <key
+            commandId="CAR Tool.ErrorLogView"
+            schemeId="myscheme"
+            sequence="M1+M2+F11">
+      </key>
+      <key
+            commandId="CAR Tool.addFilter"
+            schemeId="myscheme"
+            sequence="M1+L">
+      </key>
+      <key
+            commandId="CAR Tool.Cut"
+            schemeId="myscheme"
+            sequence="M1+X">
+      </key>
+      <key
+            commandId="CAR Tool.Add"
+            schemeId="myscheme"
+            sequence="M1+N">
+      </key>
+      <key
+            commandId="CAR Tool.Deletecommand"
+            schemeId="myscheme"
+            sequence="Delete">
+      </key>
+      <key
+            commandId="CAR Tool.rename"
+            schemeId="myscheme"
+            sequence="F2">
+      </key>
+        <key
+            commandId="CAR Tool.goto"
+            schemeId="myscheme"
+            sequence="Alt+B">
+      </key>
+       <key
+            commandId="CAR Tool.undo"
+            schemeId="myscheme"
+            sequence="M1+Z">
+      </key>
+       <key
+            commandId="CAR Tool.redo"
+            schemeId="myscheme"
+            sequence="M1+Y">
+      </key>
+      <scheme
+            id="myscheme"
+            name="myscheme">
+      </scheme>
+      <key
+            commandId="CAR Tool.search"
+            schemeId="myscheme"
+            sequence="M1+F">
+      </key>
+      <key
+            commandId="org.eclipse.ui.navigate.nextTab"
+            contextId="org.eclipse.ui.contexts.dialogAndWindow"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+TAB">
+      </key>
+      <key
+            commandId="org.eclipse.ui.navigate.previousTab"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+M2+TAB">
+      </key>
+      <key
+            commandId="CAR Tool.tabhandler"
+            schemeId="myscheme"
+            sequence="TAB">
+      </key>
+      <key
+            commandId="CAR Tool.shifttabhandler"
+            schemeId="myscheme"
+            sequence="M2+TAB">
+      </key>
+      <key
+            commandId="org.eclipse.ui.help.helpContents"
+            schemeId="myscheme"
+            sequence="F1">
+      </key>
+      <key
+            commandId="org.eclipse.ui.edit.copy"
+            schemeId="myscheme"
+            sequence="M1+C">
+      </key>
+      <key
+            commandId="CAR Tool.Paste"
+            schemeId="myscheme"
+            sequence="M1+v">
+      </key>
+      <key
+            commandId="CAR Tool.ToolTipFocus"
+            schemeId="myscheme"
+            sequence="F3">
+      </key>
+      <key
+            commandId="CAR Tool.ToolTipOpen"
+            schemeId="myscheme"
+            sequence="F4">
+      </key>
+      
+      <key
+            commandId="CAR Tool.Checkspell"
+            schemeId="myscheme"
+            sequence="F7">
+      </key>
+      
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="main.Perspective"
+            fixed="true"
+            id="CAR.perspective"
+            name="CAR">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/default.css"
+            id="CAR Tool.window7_theme_id"
+            label="Theme1">
+      </theme>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="preferencepage.AutoFill"
+            id="CAR Tool.page13"
+            name="Autofill">
+      </page>
+      <page
+            class="preferencepage.ChangeHistoryPreferencePage"
+            id="CAR Tool.page19"
+            name="Change History">
+      </page>
+      <page
+            class="preferencepage.DefaultValue"
+            id="CAR Tool.DefaultValue"
+            name="Default Values">
+      </page>
+     <!--page	#HLTC85
+            class="preferencepage.DesignHierarchy"
+            id="CAR Tool.page16"
+            name="Design Hierarchy">
+      </page-->
+      <page
+            class="preferencepage.DocumentNumber"
+            id="CAR Tool.page10"
+            name="Document Name">
+      </page>
+      <page
+            class="preferencepage.DocumentStatusText"
+            id="CAR Tool.page10"
+            name="Document Status">
+      </page>
+      <page
+            class="preferencepage.ErrorLog"
+            id="CAR Tool.page10"
+            name="Error Logs">
+      </page>
+       <!-- P3R169-->
+      <page
+      		class="preferencepage.ExportSettings"
+      		id="CAR Tool.ExportType"
+      		name="Export Analysis Type" >
+       </page>
+      <page
+            class="preferencepage.Filter"
+            id="CAR Tool.FilterPage"
+            name="Filters">
+      </page>
+      <page
+            class="preferencepage.FITCharacteristics"
+            id="CAR Tool.page3"
+            name="ID tags">
+      </page>
+     <!-- LMTS_21 by parthesh -->
+      <page
+           class="preferencepage.LibraryLicencePopup"
+           id="CAR Tool.LibraryLicencePopup"
+           name="Licence Pop Up">
+     </page>
+     <!-- P3R206-->
+      <page
+      		class="preferencepage.LoginCheck"
+            id="CAR Tool.LoginSettings"
+            name="Login Screen">
+      </page>
+      <page
+            class="preferencepage.GeneralNumberFormat"
+            id="CAR Tool.page1"
+            name="Number Format">
+      </page>
+      <page
+            class="preferencepage.GeneralPopup"
+            id="CAR Tool.page11"
+            name="Pop Ups">
+      </page>
+      <page
+            class="preferencepage.ExclusiveSelectionPreferencePage"
+            id="CAR Tool.quickselection"
+            name="Selection">
+      </page>
+      <page
+            class="preferencepage.Theme"
+            id="CAR Tool.page1"
+            name="Theme">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.themes">
+      <theme
+            id="de.spiritlink.custom.ui.theme"
+            name="Custom Theme">
+      </theme>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="handler.AddHandler"
+            commandId="CAR Tool.Add">
+         <activeWhen>
+            <or>
+               <with
+                     variable="activePart">
+                  <test
+                        property="properties.addPropertyTester">
+                  </test>
+               </with>
+               <with
+                     variable="activeEditor">
+                  <test
+                        property="properties.addPropertyTester">
+                  </test>
+               </with>
+            </or>
+         </activeWhen>
+      </handler>
+      <!--Multiple Window-->
+      <handler
+      		class="handler.NewWindowHandler"
+      		commandId="CAR Tool.NewWindow">
+      		 <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.newWindow">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      
+      <handler
+      		class="handler.SavePerspectiveHandler"
+      		commandId="CAR Tool.SavePerspective">
+      		 <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.perspectiveCount">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+      		class="handler.DeletePerspectiveHandler"
+      		commandId="CAR Tool.DeletePerspective"> 
+      </handler>
+      <!--Multiple Window-->
+      <handler
+            class="handler.AssignFIT"
+            commandId="CAR Tool.assignFIT">
+         <activeWhen>
+            <with
+                  variable="activeEditor">
+               <test
+                     property="properties.assignFITparameter">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.RefreshDataHandler"
+            commandId="CAR Tool.refresh">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     args="true"
+                     forcePluginActivation="true"
+                     property="properties.RefreshFilter_Property"
+                     value="Editor">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.FilterColumnHandler"
+            commandId="org.eclipse.ui.edit.findReplace">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.FilterColumn_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.CopyHandler"
+            commandId="CAR Tool.Copy">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.copy_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.CutHandler"
+            commandId="CAR Tool.Cut">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.cut_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.PasteHandler"
+            commandId="CAR Tool.Paste">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.paste_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.RenameHandler"
+            commandId="org.eclipse.ui.edit.rename">
+      </handler>
+      <handler
+            class="handler.DeleteHandler"
+            commandId="org.eclipse.ui.edit.delete">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.deleteparameterconfi">
+               </test>
+            </with></activeWhen>
+      </handler>
+      <!--Jayesh#Redo Undo Handler start-->
+      <handler
+            class="handler.UndoHandler"
+            commandId="CAR Tool.undo">
+	     <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.undo_property">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.RedoHandler"
+            commandId="CAR Tool.redo">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.redo_property">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+       <!--Jayesh#Redo Undo Handler end-->
+      <handler
+            commandId="CAR Tool.AnalysisResultEditor">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.analysis_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.AnalysisResult_BarchartHandler"
+            commandId="CAR Tool.AnalysisResult_barchartcommand">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.chartPropertyTester">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.RenameHandler"
+            commandId="CAR Tool.rename">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.renamePropertyTester">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+
+      <handler
+            class="handler.CustomColumnHandler"
+            commandId="CAR Tool.customColumn">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.customColumnPropertyTester">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.SearchHandler"
+            commandId="CAR Tool.search">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.quicksearch">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.ExportOnly"
+            commandId="CAR Tool.exportonly">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.exportonlyPropertyTester">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.DeleteHandler"
+            commandId="CAR Tool.Deletecommand">
+         <activeWhen>
+            <or>
+               <with
+                     variable="activePart">
+                  <test
+                        property="properties.deleteparameterconfi">
+                  </test>
+               </with>
+               <with
+                     variable="activeEditor">
+                  <test
+                        property="properties.deleteparameterconfi">
+                  </test>
+               </with>
+            </or>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.ImportHandler"
+            commandId="CAR Tool.Import">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.import">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.ExportHandler"
+            commandId="CAR Tool.export_Handler">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.export">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.FilterColumnHandler"
+            commandId="CAR Tool.FilterColumn">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.FilterColumn_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.FilterColumnHandler"
+            commandId="CAR Tool.FilterColumn">
+         <activeWhen>
+            <with
+                  variable="activeEditor">
+               <test
+                     property="properties.FilterColumn_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.AddFilterHandler"
+            commandId="CAR Tool.addFilter">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.addfilter">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.AddFilterHandler"
+            commandId="CAR Tool.addFilter">
+         <activeWhen>
+            <with
+                  variable="activeEditor">
+               <test
+                     property="properties.addfilter">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.ExportOnly"
+            commandId="CAR Tool.exportonly">
+         <activeWhen>
+            <with
+                  variable="activeEditor">
+               <test
+                     property="properties.exportonlyPropertyTester">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.LicenseControllerHandler"
+            commandId="CAR Tool.EmbeddedComand">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.embedded_propertytester">
+               </test>
+            </with></enabledWhen>
+      </handler>
+      <handler
+            class="handler.EmbeddedControllerRefresh"
+            commandId="CAR Tool.embedded_controller_refresh">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.embedded_propertytester_refresh">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.QuickEditHandler"
+            commandId="CAR Tool.QuickeditCommand">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.euickeditproperty">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.ExportScreenShotImageHandler"
+            commandId="CAR Tool.ExportToImage">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.exporttoimage">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.ExportScreenShotPDFHandler"
+            commandId="CAR Tool.ExportToPDF">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     forcePluginActivation="false"
+                     property="properties.screenshot">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.FullScreenShortHandler"
+            commandId="CAR Tool.FullScreenshot">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     forcePluginActivation="false"
+                     property="properties.screenshot">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.ImageFullScreenShotHandler"
+            commandId="CAR Tool.ImageFullScreenshot">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     forcePluginActivation="false"
+                     property="properties.screenshot">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.Copy_EntireEntryHandler"
+            commandId="CAR Tool.Copy_EntireEntry">
+         <activeWhen>
+            <with
+                  variable="activePart">
+               <test
+                     property="properties.copyEntireEntry_property">
+               </test>
+            </with>
+         </activeWhen>
+      </handler>
+      <handler
+            class="handler.Blank_Handler"
+            commandId="CAR Tool.blankHandler"> 
+       </handler>
+      <handler
+            class="handler.ExportHTMLHeandler"
+            commandId="CAR Tool.export_html">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.export">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.ExportCSVHandler"
+            commandId="CAR Tool.exportCSV">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.export">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.ExportTSVHandler"
+            commandId="CAR Tool.exportTSV">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.export">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+        <!--P3R122-->
+      <handler
+            class="handler.AutoRefreshHandler"
+            commandId="CAR Tool.AutoRefreshCommand">
+         
+      </handler>
+      <!--P3R122-->
+      <handler
+            class="handler.ManualRefreshHandler"
+            commandId="CAR Tool.ManualRefreshCommand">
+         
+      </handler>
+      <!--P3R122-->
+      <handler
+            class="handler.AutoRefreshHandler"
+            commandId="CAR Tool.DataChangeAutoCommand">
+         
+      </handler>
+      <!--P3R122-->
+      <handler
+            class="handler.ManualRefreshHandler"
+            commandId="CAR Tool.DataChangeManualCommand">
+         
+      </handler>
+     <!--P3R32-->
+      <handler
+            class="handler.LineWrapHandler"
+            commandId="CAR Tool.LineWrapCommand">
+         
+      </handler>
+       <handler
+            class="handler.LineWrapHandler"
+            commandId="CAR Tool.LineUnWrapCommand">
+         
+      </handler>
+    <!--P3R32-->
+    
+    <!--P3R219-->
+      <handler
+            class="handler.AutoSizeHandler"
+            commandId="CAR Tool.AutoSizeCommand">
+         
+      </handler>     
+    
+      <handler
+            class="handler.BackupData"
+            commandId="CAR Tool.BackupData">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.backuprestore">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="handler.RestoreData"
+            commandId="CAR Tool.RestoreData">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.backuprestore">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+        <handler
+            class="handler.MigrateDataHandler"
+            commandId="CAR Tool.MigrateData">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     property="properties.backuprestore">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+     
+      <handler
+            class="handler.SnapsortHandler"
+            commandId="CAR Tool.SnapsortHanlder">
+         <enabledWhen>
+            <with
+                  variable="activeWorkbenchWindow">
+               <test
+                     forcePluginActivation="false"
+                     property="properties.screenshot">
+               </test>
+            </with>
+         </enabledWhen>
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.core.expressions.propertyTesters">
+           <propertyTester
+           class="properties.EditorTester"
+           id="properties.propertyTester1"
+           namespace="properties"
+           properties="assignFITparameter,isEditor1,deleteparameterconfi,addPropertyTester,paste_property,cut_property,copy_property,RefreshFilter_Property,FilterColumn_property,addfilter,AuditLogView_property,revert_property,chartPropertyTester,renamePropertyTester,customColumnPropertyTester,quicksearch,exportonlyPropertyTester,hideshowtarget,export,import,undo_property,redo_property,embedded_propertytester,embedded_propertytester_refresh,euickeditproperty,screenshot,exporttoimage,concurrentproperty,hideandshowcomponentandselection,dfavisble,copyEntireEntry_property,backuprestore,overview,newWindow,perspectiveCount"
+           type="java.lang.Object">
+
+     </propertyTester>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
+      <propertyTabs
+            contributorId="CAR Tool.propertyContributorTab">
+         <propertyTab
+               afterTab="com.editor.CoverSheet"
+               category="CAR Tool.HardwareElements"
+               id="car.view.HardwareElements"
+               label="Design Hierarchy">
+         </propertyTab>
+         <propertyTab
+               afterTab="views.ErrorLogs"
+               category="CAR Tool.CoverSheet"
+               id="com.editor.CoverSheet"
+               label="Coversheet">
+         </propertyTab>
+         <propertyTab
+               afterTab="views.ErrorLogs"
+               category="CAR Tool.ParameterConfiguration"
+               id="phulimex.editor.ParameterConfiguration"
+               label="ParameterConfiguration">
+         </propertyTab>
+         <propertyTab
+               afterTab="car.view.FaultCharacterisation_FM"
+               category="CAR Tool.FaultCharacterisations"
+               id="phulimex.editor.FaultCharacterisations"
+               label="Fault Characterisations">
+         </propertyTab>
+         <propertyTab
+               afterTab="views.ErrorLogs"
+               category="CAR Tool.FaultCharacterisation_FM"
+               id="car.view.FaultCharacterisation_FM"
+               label="FM_List">
+         </propertyTab>
+      </propertyTabs>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="CAR.application"
+            name="CAR">
+         <property
+               name="appName"
+               value="CAR">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/ProductIcons/LOGO-16.png,icons/ProductIcons/LOGO-32.png,icons/ProductIcons/LOGO-48.png,icons/ProductIcons/LOGO-64.png,icons/ProductIcons/LOGO-128.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="FFFFFF">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="7,295,445,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="5,280,490,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
+      </product>
+   </extension>
+</plugin>
