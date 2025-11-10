@@ -1,50 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde version="3.8"?>
-
-<target name="PHULIMEX" sequenceNumber="48">
-  <locations>
-    <location path="${eclipse_home}" type="Directory"/>
-
-    <location
-        includeAllPlatforms="true"
-        includeConfigurePhase="true"
-        includeMode="slicer"
-        includeSource="true"
-        type="InstallableUnit">
-
-      <!-- Core Platform -->
-      <unit id="org.eclipse.platform.sdk" version="0.0.0"/>
-      <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
-
-      <!-- RCP Runtime -->
-      <unit id="org.eclipse.rcp.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.rcp.source.feature.group" version="0.0.0"/>
-
-      <!-- Equinox -->
-      <unit id="org.eclipse.equinox.sdk.feature.group" version="0.0.0"/>
-
-      <!-- PDE & API Tools -->
-      <unit id="org.eclipse.pde.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.pde.source.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.pde.api.tools.ee.feature.feature.group" version="0.0.0"/>
-
-      <!-- JDT -->
-      <unit id="org.eclipse.jdt.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.jdt.source.feature.group" version="0.0.0"/>
-
-      <!-- Optional Tools -->
-      <unit id="org.eclipse.cvs.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.cvs.source.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.releng.tools.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.sdk.examples.source.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.sdk.tests.feature.group" version="0.0.0"/>
-
-      <!-- Compatibility -->
-      <unit id="org.eclipse.osgi.compatibility.plugins.feature.feature.group" version="0.0.0"/>
-
-      <!-- Repositories -->
-      <repository location="https://download.eclipse.org/releases/2024-09/"/>
-      <repository location="https://download.eclipse.org/eclipse/updates/4.33/"/>
-    </location>
-  </locations>
+<target name="com.example.rcp.target" sequenceNumber="1">
+    <locations>
+        <location includeAllPlatforms="false" includeConfigureFeatures="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+            <repository location="https://download.eclipse.org/releases/2021-06/"/>
+            
+            <unit id="org.eclipse.rcp.feature.group" version="0.0.0"/>
+            <unit id="org.eclipse.platform.sdk" version="4.20.0.I20210611-1600"/>
+        </location>
+    </locations>
 </target>

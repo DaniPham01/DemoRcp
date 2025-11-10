@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="PHULIMEX" uid="PHULIMEX" id="Phulimex_01.product" application="Phulimex_01.application" version="1.0.0.qualifier" type="bundles" includeLaunchers="true" autoIncludeRequirements="true">
+<product name="PHULIMEX" uid="PHULIMEX" id="Phulimex_01.product" application="com.example.rcp.application" version="1.0.0.qualifier" type="bundles" includeLaunchers="true" autoIncludeRequirements="true">
 
    <configIni use="default">
    </configIni>
