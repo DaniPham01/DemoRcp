@@ -26,22 +26,22 @@ public class Constant {
 	public final String VA_ID = "ree.editors.Variants";
 	public final String VN_ID = "ree.views.Variant_TypeView";
 	public final String DH_ID = "view.HardwareElements";
-	public final String AR_ID = "CAR Tool.Analysis_result";
+	public final String AR_ID = "PHULIMEX Tool.Analysis_result";
 	public final String EL_ID = "view.ErrorLogs";
 	public final String CH_ID = "view.AuditLogs";
 	public final String AR_VIEW_ID = "com.view.lambdacontri";
 	public final String CS_ID = "com.editor.CoverSheet";
 	public final String DOC_ID = "ree.views.DocumentView";
-	public final String OV_ID = "CAR Tool.overview";
+	public final String OV_ID = "PHULIMEX Tool.overview";
 	public final String SAVED_FILTER_ID = "view.SaveSearchView";
 	public final String ADMIN_ACCESS_ID = "ree.AdminAccess";
-	public final String METRIC_HORIZONTAL_ID = "CAR Tool.AnalysisResult_metricschart_Horizantal";
-	public final String PMHF_HORIZONTAL_CHART_ID = "CAR Tool.barcharts_Horizantal";
-	public final String PMHF_VERTICAL_CHART_ID = "CAR Tool.barcharts";
-	public final String LAMBDA_VERTICAL_CHART_ID = "CAR Tool.lambdachart";
-	public final String LAMBDA_HORIZONTAL_CHART_ID = "CAR Tool.lambdachart_Horizantal";
-	public final String METRIC_VERTICAL_CHART_ID = "CAR Tool.AnalysisResult_metricschart";
-	public final String LICENCE_VIEW_ID = "CAR Tool.UsersInformationView";
+	public final String METRIC_HORIZONTAL_ID = "PHULIMEX Tool.AnalysisResult_metricschart_Horizantal";
+	public final String PMHF_HORIZONTAL_CHART_ID = "PHULIMEX Tool.barcharts_Horizantal";
+	public final String PMHF_VERTICAL_CHART_ID = "PHULIMEX Tool.barcharts";
+	public final String LAMBDA_VERTICAL_CHART_ID = "PHULIMEX Tool.lambdachart";
+	public final String LAMBDA_HORIZONTAL_CHART_ID = "PHULIMEX Tool.lambdachart_Horizantal";
+	public final String METRIC_VERTICAL_CHART_ID = "PHULIMEX Tool.AnalysisResult_metricschart";
+	public final String LICENCE_VIEW_ID = "PHULIMEX Tool.UsersInformationView";
 	
 	
 	/*=============  MODULE TITLE  ===============*/

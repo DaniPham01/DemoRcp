@@ -12,7 +12,7 @@ import common.Constant;
 import editors.CoverSheetInput;
 
 public class CoverSheetHandler extends AbstractHandler {
-	  public static String ID = "CAR Tool.CoverSheetcommand";
+	  public static String ID = "PHULIMEX Tool.CoverSheetcommand";
 		 private Constant constant = Constant.getInstance();
 
 	@Override

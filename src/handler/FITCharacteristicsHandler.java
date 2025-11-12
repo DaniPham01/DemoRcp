@@ -16,7 +16,7 @@ import views.SaveSearchView;
 
 
 public class FITCharacteristicsHandler extends AbstractHandler {
-	  public static String ID = "CAR Tool.FITCharacteristicscommand";
+	  public static String ID = "PHULIMEX Tool.FITCharacteristicscommand";
 	  private Constant constant = Constant.getInstance();
 	@Override
 	public Object execute(ExecutionEvent arg0) throws ExecutionException {

@@ -18,7 +18,7 @@ import views.SaveSearchView;
 
 public class HardwareDescriptionHandler extends AbstractHandler  {
 	
-	public static String ID = "CAR Tool.HWDescriptioncommand";
+	public static String ID = "PHULIMEX Tool.HWDescriptioncommand";
 	private Constant constant = Constant.getInstance();
 
 	@Override

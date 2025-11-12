@@ -11,7 +11,7 @@ import org.eclipse.ui.PlatformUI;
 import common.Constant;
 
 public class DesignHierarchyHandler extends AbstractHandler {
-	public static final String ID = "CAR Tool.DesignHierarchy";
+	public static final String ID = "PHULIMEX Tool.DesignHierarchy";
 	private Constant constant = Constant.getInstance();
 
 	@Override

@@ -9,7 +9,7 @@ import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
 public class ApplicationWorkbenchAdvisor extends WorkbenchAdvisor {
 
-	public static final String PERSPECTIVE_ID = "CAR.perspective"; //$NON-NLS-1$
+	public static final String PERSPECTIVE_ID = "PHULIMEX.perspective"; //$NON-NLS-1$
 
 
     public WorkbenchWindowAdvisor createWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {

@@ -16,7 +16,7 @@ import views.SaveSearchView;
 
 
 public class FaultCharacterisationsHandler extends AbstractHandler  {
-	  public static String ID = "CAR Tool.FaultCharacterisationscommand";
+	  public static String ID = "PHULIMEX Tool.FaultCharacterisationscommand";
 	  private Constant constant = Constant.getInstance();
 
 	@Override

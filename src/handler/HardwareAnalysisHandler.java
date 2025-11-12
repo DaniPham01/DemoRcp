@@ -15,7 +15,7 @@ import editors.HardwareAnalysisInput;
 import views.SaveSearchView;
 
 public class HardwareAnalysisHandler extends AbstractHandler  {
-	public static final String ID = "CARTool.HardwareAnalysiscommand";
+	public static final String ID = "PHULIMEXTool.HardwareAnalysiscommand";
 	private Constant constant = Constant.getInstance();
 
 	@Override

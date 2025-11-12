@@ -16,7 +16,7 @@ import editors.SafetyMechanismsInput;
 import views.SaveSearchView;
 
 public class SafetyMechanismsHandler extends AbstractHandler {
-	public final static String ID = "CAR Tool.SafetyMechanismscommand";
+	public final static String ID = "PHULIMEX Tool.SafetyMechanismscommand";
 	private Constant constant = Constant.getInstance();
 
 	@Override

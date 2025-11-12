@@ -6,7 +6,7 @@
          point="org.eclipse.core.runtime.applications">
       <application>
          <run
-               class="phulimex_01.Application">
+               class="PHULIMEX.Application">
          </run>
       </application>
    </extension>
@@ -56,7 +56,7 @@
             class="editors.AnalysisResultEditor"
             default="true"
             icon="icons/AR.png"
-            id="CAR Tool.Analysis_result"
+            id="PHULIMEX Tool.Analysis_result"
             name="Analysis Results">
       </editor>
       <editor
@@ -70,42 +70,42 @@
             class="editors.BarChart_PMHF"
             default="false"
             icon="icons/Bar-chart.png"
-            id="CAR Tool.barcharts"
+            id="PHULIMEX Tool.barcharts"
             name="PMHF Chart">
       </editor>
       <editor
             class="editors.Stacked_LambdaChart"
             default="false"
             icon="icons/Bar-chart.png"
-            id="CAR Tool.lambdachart"
+            id="PHULIMEX Tool.lambdachart"
             name="Lambda Chart">
       </editor>
       <editor
             class="editors.AnalysisResult_MetricsChart"
             default="false"
             icon="icons/Bar-chart.png"
-            id="CAR Tool.AnalysisResult_metricschart"
+            id="PHULIMEX Tool.AnalysisResult_metricschart"
             name="Metrics Chart">
       </editor>
       <editor
             class="editors.Stacked_LambdaChart_Horizantal"
             default="false"
             icon="icons/Bar-chart.png"
-            id="CAR Tool.lambdachart_Horizantal"
+            id="PHULIMEX Tool.lambdachart_Horizantal"
             name="Lambda Chart">
       </editor>
       <editor
             class="editors.AnalysisResult_Metrics_HorizantalChart"
             default="false"
             icon="icons/Bar-chart.png"
-            id="CAR Tool.AnalysisResult_metricschart_Horizantal"
+            id="PHULIMEX Tool.AnalysisResult_metricschart_Horizantal"
             name="Metrics Chart">
       </editor>
       <editor
             class="editors.BarChart_PMHF_Horizantal"
             default="false"
             icon="icons/Bar-chart.png"
-            id="CAR Tool.barcharts_Horizantal"
+            id="PHULIMEX Tool.barcharts_Horizantal"
             name="PMHF Chart">
       </editor>
       <editor
@@ -118,7 +118,7 @@
             class="editors.Overview"
             default="false"
             icon="icons/overview_icon.png"
-            id="CAR Tool.overview"
+            id="PHULIMEX Tool.overview"
             name="Overview ">
       </editor>
       <editor
@@ -136,56 +136,56 @@
             allowMultiple="true"
             class="views.HardwareElement"
             icon="icons/HW.png"
-            id="car.view.HardwareElements"
+            id="PHULIMEX.view.HardwareElements"
             name="Design Hierarchy"
             restorable="true">
   </view>
       <view
             class="views.AuditLogs"
             icon="icons/audit.png"
-            id="car.view.AuditLogs"
+            id="PHULIMEX.view.AuditLogs"
             name="Change History"
             restorable="true">
       </view>
       <view
             class="views.ErrorLogs"
             icon="icons/log-20.png"
-            id="car.view.ErrorLogs"
+            id="PHULIMEX.view.ErrorLogs"
             name="Error Logs"
             restorable="true">
       </view>
       <view
             class="views.SaveSearchView"
             icon="icons/saved-filter-20.png"
-            id="car.view.SaveSearchView"
+            id="PHULIMEX.view.SaveSearchView"
             name="Saved Filters"
             restorable="true">
       </view>
       <view
             class="views.FaultCharacterisation_FM"
             icon="icons/fault.png"
-            id="car.view.FaultCharacterisation_FM"
+            id="PHULIMEX.view.FaultCharacterisation_FM"
             name="FM List"
             restorable="true">
       </view>
       <view
             class="views.HardwareParts_SM"
             icon="icons/SM.png"
-            id="car.views.HardwareParts"
+            id="PHULIMEX.views.HardwareParts"
             name="Hardware Parts"
             restorable="true">
       </view>
       <view
             class="views.HardwareElementFuctionality_HD"
             icon="icons/HD.png"
-            id="car.views.HardwareElementFuctionality"
+            id="PHULIMEX.views.HardwareElementFuctionality"
             name="Hardware Element Functionality"
             restorable="true">
       </view>
       <view
             class="views.FaultCoverage_HA"
             icon="icons/HA.png"
-            id="car.view.faultcoverage"
+            id="PHULIMEX.view.faultcoverage"
             name="HW Analysis Fault Coverage"
             restorable="true">
       </view>
@@ -211,7 +211,7 @@
       <view
             class="views.UsersInformationView"
             icon="icons/license-icon-18.png"
-            id="CAR Tool.UsersInformationView"
+            id="PHULIMEX Tool.UsersInformationView"
             name="Licence Controller"
             restorable="true">
       </view>
@@ -221,83 +221,83 @@
          point="org.eclipse.ui.commands">
       <command
             defaultHandler="showview.command.HardwareElement"
-            id="CAR Tool.HardwareElementView"
+            id="PHULIMEX Tool.HardwareElementView"
             name="Hardware Element">
       </command>
       <command
             defaultHandler="showview.command.ErrorLogView"
-            id="CAR Tool.ErrorLogView"
+            id="PHULIMEX Tool.ErrorLogView"
             name="Activate ELM">
       </command>
        <command
             defaultHandler="handler.GotoHandler"
-            id="CAR Tool.goto"
+            id="PHULIMEX Tool.goto"
             name="Goto back">
       </command>
        <command
-            id="CAR Tool.undo"
+            id="PHULIMEX Tool.undo"
             name="Undo">
       </command>
       <!--Multiple Window-->
       <command
-      		id="CAR Tool.NewWindow"
+      		id="PHULIMEX Tool.NewWindow"
       		name="New Window">
       </command>
       <command
-      		id="CAR Tool.SavePerspective"
+      		id="PHULIMEX Tool.SavePerspective"
       		name="Save Perspective As">
       </command>
       <command
-      		id="CAR Tool.DeletePerspective"
+      		id="PHULIMEX Tool.DeletePerspective"
       		name="Delete Perspective">
       </command>
       <!--Multiple Window-->
        <command
-           	id="CAR Tool.redo"
+           	id="PHULIMEX Tool.redo"
             name="Redo">
       </command>
       <command
             defaultHandler="showview.command.SavedSearchViewHandler"
-            id="CAR Tool.SavedSearchViewHandler"
+            id="PHULIMEX Tool.SavedSearchViewHandler"
             name="Activate SFM">
       </command>
       <command
             defaultHandler="handler.SafetyMechanismsHandler"
-            id="CAR Tool.SafetyMechanismsEditor"
+            id="PHULIMEX Tool.SafetyMechanismsEditor"
             name="Safety Mechanisms">
       </command>
       <command
             defaultHandler="handler.ParameterConfigurationHandler"
-            id="CAR Tool.ParameterConfigurationEditor"
+            id="PHULIMEX Tool.ParameterConfigurationEditor"
             name="Analysis Parameters">
       </command>
       <command
             defaultHandler="handler.HardwareAnalysisHandler"
-            id="CAR Tool.HardwreAnalysisEditor"
+            id="PHULIMEX Tool.HardwreAnalysisEditor"
             name="Hardwre Analysis">
       </command>
       <command
             defaultHandler="handler.HardwareDescriptionHandler"
-            id="CAR Tool.HardwareDescriptionEditor"
+            id="PHULIMEX Tool.HardwareDescriptionEditor"
             name="Hardware Description">
       </command>
       <command
             defaultHandler="handler.FITCharacteristicsHandler"
-            id="CAR Tool.FITCharacteristics"
+            id="PHULIMEX Tool.FITCharacteristics"
             name="FIT Characteristics">
       </command>
       <command
             defaultHandler="handler.FaultCharacterisationsHandler"
-            id="CAR Tool.FaultCharacterisations"
+            id="PHULIMEX Tool.FaultCharacterisations"
             name="Fault Characterisation">
       </command>
       <command
             defaultHandler="handler.AnalysisResultHandler"
-            id="CAR Tool.AnalysisResultEditor"
+            id="PHULIMEX Tool.AnalysisResultEditor"
             name="Activate ARM">
       </command>
       <command
-            id="CAR Tool.FilterColumn"
+            id="PHULIMEX Tool.FilterColumn"
             name="Filter Column">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -305,102 +305,102 @@
          </state>
       </command>
       <command
-            id="CAR Tool.refresh"
+            id="PHULIMEX Tool.refresh"
             name="Refresh">
       </command>
       
        <command
-            id="CAR Tool.Checkspell"
+            id="PHULIMEX Tool.Checkspell"
             name="Check spell">
       </command>
       
       <command
-            id="CAR Tool.FilterColumn1"
+            id="PHULIMEX Tool.FilterColumn1"
             name="Filter Column1">
       </command>
       <command
             defaultHandler="handler.DesignHierarchyHandler"
-            id="CAR Tool.DesignHierarchy"
+            id="PHULIMEX Tool.DesignHierarchy"
             name="Design Hierarchy">
       </command>
       <command
-            id="CAR Tool.command1"
+            id="PHULIMEX Tool.command1"
             name="Name">
       </command>
       <command
             defaultHandler="showview.command.AuditLogView"
-            id="CAR Tool.AuditLogView"
+            id="PHULIMEX Tool.AuditLogView"
             name="Audit Log">
       </command>
       <command
             defaultHandler="handler.DesignHierarchyDigramHandler"
-            id="CAR Tool.DesignHierarchyDigramHandler"
+            id="PHULIMEX Tool.DesignHierarchyDigramHandler"
             name="Design Hierarchy Diagram">
       </command>
       <command
-            id="CAR Tool.addFilter"
+            id="PHULIMEX Tool.addFilter"
             name="Create Filter">
       </command>
       <command
             defaultHandler="handler.OverviewHandler"
-            id="CAR Tool.overviewHandler"
+            id="PHULIMEX Tool.overviewHandler"
             name="Overview">
       </command>
       <command
             defaultHandler="handler.NewProjectHandler"
-            id="CAR Tool.NewProjectComand"
+            id="PHULIMEX Tool.NewProjectComand"
             name="New Project">
       </command>
       <command
             defaultHandler="handler.OpenProjectHandler"
-            id="CAR Tool.OpenProjectComand"
+            id="PHULIMEX Tool.OpenProjectComand"
             name="Open Project">
       </command>
       <command
             defaultHandler="handler.DeleteProjectHandler"
-            id="CAR Tool.DeleteProjectComand"
+            id="PHULIMEX Tool.DeleteProjectComand"
             name="Delete Project">
       </command>
       <command
             defaultHandler="handler.AdminAccessHandler"
-            id="CAR Tool.AdminAccesscommand"
+            id="PHULIMEX Tool.AdminAccesscommand"
             name="Admin Access">
       </command>
       <command
             defaultHandler="handler.SaveasProjectHandler"
-            id="CAR Tool.SaveasProjectComand"
+            id="PHULIMEX Tool.SaveasProjectComand"
             name="Save As Project">
       </command>
       <command
             defaultHandler="handler.RenameProjectHandler"
-            id="CAR Tool.RenameProjectComand"
+            id="PHULIMEX Tool.RenameProjectComand"
             name="Rename Project ">
       </command>
       <command
-            id="CAR Tool.EmbeddedComand"
+            id="PHULIMEX Tool.EmbeddedComand"
             name="Licence Controller">
       </command>
       <command
-            id="CAR Tool.embedded_controller_refresh"
+            id="PHULIMEX Tool.embedded_controller_refresh"
             name="Embadded Controller">
       </command>
       <command
             defaultHandler="handler.OpenLibraryHandler"
-            id="CAR Tool.openlibrary"
+            id="PHULIMEX Tool.openlibrary"
             name="Open Library">
       </command>
       <command
             defaultHandler="showview.command.Document"
-            id="CAR Tool.DocumentViewOpenCommand"
+            id="PHULIMEX Tool.DocumentViewOpenCommand"
             name="Documents">
       </command>
       <command
-            id="CAR Tool.QuickeditCommand"
+            id="PHULIMEX Tool.QuickeditCommand"
             name="Quick edit">
       </command>
        <!--P3R122-->
       <command
-            id="CAR Tool.AutoRefreshCommand"
+            id="PHULIMEX Tool.AutoRefreshCommand"
             name="Refresh Automatic">
             <state
                class="org.eclipse.ui.handlers.RegistryToggleState:true"
@@ -409,7 +409,7 @@
       </command>
       <!--P3R122-->
       <command
-            id="CAR Tool.ManualRefreshCommand"
+            id="PHULIMEX Tool.ManualRefreshCommand"
             name="Refresh Manually">
             <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -418,7 +418,7 @@
       </command>
       <!--P3R122-->
       <command
-            id="CAR Tool.DataChangeAutoCommand"
+            id="PHULIMEX Tool.DataChangeAutoCommand"
             name="Refresh Automatic">
             <state
                class="org.eclipse.ui.handlers.RegistryToggleState:true"
@@ -427,7 +427,7 @@
       </command>
       <!--P3R122-->
       <command
-            id="CAR Tool.DataChangeManualCommand"
+            id="PHULIMEX Tool.DataChangeManualCommand"
             name="Refresh Manually">
             <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -436,7 +436,7 @@
       </command>
          <!--P3R32-->
       <command
-            id="CAR Tool.LineWrapCommand"
+            id="PHULIMEX Tool.LineWrapCommand"
             name="Wrap Lines">
             <state
                class="org.eclipse.ui.handlers.RegistryToggleState:true"
@@ -444,7 +444,7 @@
          </state>
       </command>
        <command
-            id="CAR Tool.LineUnWrapCommand"
+            id="PHULIMEX Tool.LineUnWrapCommand"
             name="UnWrap Lines">
             <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -455,7 +455,7 @@
       
       <!--P3R219-->
       <command
-            id="CAR Tool.AutoSizeCommand"
+            id="PHULIMEX Tool.AutoSizeCommand"
             name="Auto Size">
             <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -466,24 +466,24 @@
       
       <command
             defaultHandler="handler.ConcurrentFunctionalityViewHandler"
-            id="CAR Tool.concurrentview"
+            id="PHULIMEX Tool.concurrentview"
             name="Concurrent Functionality">
       </command>
       <command
-            id="CAR Tool.BackupData"
+            id="PHULIMEX Tool.BackupData"
             name="Backup Data">
       </command>
       <command
-            id="CAR Tool.RestoreData"
+            id="PHULIMEX Tool.RestoreData"
             name="Restore Data">
       </command>
       <command
-            id="CAR Tool.MigrateData"
+            id="PHULIMEX Tool.MigrateData"
             name="Migrate Data">
       </command>
       <command
             defaultHandler="handler.FunctionalityLabelListHandler"
-            id="CAR Tool.ListofLabelFunctionality"
+            id="PHULIMEX Tool.ListofLabelFunctionality"
             name="Functionality Label">
       </command>
       <command
@@ -492,21 +492,21 @@
       </command>
       <command
             defaultHandler="handler.TooltipFocus"
-            id="CAR Tool.ToolTipFocus"
+            id="PHULIMEX Tool.ToolTipFocus"
             name="Focus on Tool-tip">
       </command>
       <command
             defaultHandler="handler.TooltipOpen"
-            id="CAR Tool.ToolTipOpen"
+            id="PHULIMEX Tool.ToolTipOpen"
             name="Show Tool-tip">
       </command>
       <command
             defaultHandler="handler.AutofillClose"
-            id="CAR Tool.AutofillClose"
+            id="PHULIMEX Tool.AutofillClose"
             name="Autofill - Reject all suggestions">
       </command>
       <command
-            id="CAR Tool.blankHandler"
+            id="PHULIMEX Tool.blankHandler"
             name="Blank">
       </command>
    </extension>
@@ -514,115 +514,115 @@
          point="org.eclipse.ui.commands">
       <command
             defaultHandler="handler.ParameterConfigurationHandler"
-            id="CAR Tool.ParameterConfigurationcommand"
+            id="PHULIMEX Tool.ParameterConfigurationcommand"
             name="Activate PAM">
       </command>
       <command
             defaultHandler="handler.FITCharacteristicsHandler"
-            id="CAR Tool.FITCharacteristicscommand"
+            id="PHULIMEX Tool.FITCharacteristicscommand"
             name="Activate FSM">
       </command>
       <command
             defaultHandler="handler.FaultCharacterisationsHandler"
-            id="CAR Tool.FaultCharacterisationscommand"
+            id="PHULIMEX Tool.FaultCharacterisationscommand"
             name="Activate FDM">
       </command>
       <command
             defaultHandler="handler.HardwareDescriptionHandler"
-            id="CAR Tool.HWDescriptioncommand"
+            id="PHULIMEX Tool.HWDescriptioncommand"
             name="Activate HDM">
       </command>
       
 	  <command
 		    defaultHandler="handler.RestartHandler"
-		    id="CAR Tool.Restartcommand"
+		    id="PHULIMEX Tool.Restartcommand"
 		    name="Restart the Tool">
       </command>
       
   	  <command
 	    defaultHandler="handler.RefreshHandler"
-	    id="CAR Tool.Refreshcommand"
+	    id="PHULIMEX Tool.Refreshcommand"
 	    name="Refresh module">
       </command>
       
       <command
             defaultHandler="handler.SafetyMechanismsHandler"
-            id="CAR Tool.SafetyMechanismscommand"
+            id="PHULIMEX Tool.SafetyMechanismscommand"
             name="Activate SMM">
       </command>
       <command
             defaultHandler="handler.HardwareAnalysisHandler"
-            id="CARTool.HardwareAnalysiscommand"
+            id="PHULIMEXTool.HardwareAnalysiscommand"
             name="Activate FIM">
       </command>
       <command
             defaultHandler="handler.AnalysisResultHandler"
-            id="CAR Tool.AnalysisResultcommand"
+            id="PHULIMEX Tool.AnalysisResultcommand"
             name="Analysis Result">
       </command>
       <command
-            id="CAR Tool.Import"
+            id="PHULIMEX Tool.Import"
             name="Import">
       </command>
       <command
-            id="CAR Tool.assignFIT"
+            id="PHULIMEX Tool.assignFIT"
             name="Assign FIT">
       </command>
       <command
-            id="CAR Tool.Deletecommand"
+            id="PHULIMEX Tool.Deletecommand"
             name="Delete Selected Entries">
       </command>
       <command
-            id="CAR Tool.Add"
+            id="PHULIMEX Tool.Add"
             name="Add new Entry in active module">
       </command>
      <command
            defaultHandler="handler.ScreenShotHandler"
-           id="CAR Tool.Screenshot"
+           id="PHULIMEX Tool.Screenshot"
            name="Screenshot">
      </command>
      <command
-           id="CAR Tool.FullScreenshot"
+           id="PHULIMEX Tool.FullScreenshot"
            name="Full Screenshot">
      </command>
  <command
            defaultHandler="handler.ExportScreenShotXlsHandler"
-           id="CAR Tool.ExportToXls"
+           id="PHULIMEX Tool.ExportToXls"
            name="Export To XLS">
      </command>
      <command
-           id="CAR Tool.ExportToPDF"
+           id="PHULIMEX Tool.ExportToPDF"
            name="Export To PDF">
      </command>
       <command
             defaultHandler="handler.CoverSheetHandler"
-            id="CAR Tool.CoverSheetcommand"
+            id="PHULIMEX Tool.CoverSheetcommand"
             name="Activate CSM">
       </command>
       <command
-            id="CAR Tool.Copy"
+            id="PHULIMEX Tool.Copy"
             name="Copy">
       </command>
       <command
-            id="CAR Tool.Paste"
+            id="PHULIMEX Tool.Paste"
             name="Paste">
       </command>
       <command
-            id="CAR Tool.Cut"
+            id="PHULIMEX Tool.Cut"
             name="Cut">
       </command>
       <command
-            id="CAR Tool.rename"
+            id="PHULIMEX Tool.rename"
             name="Modify cell content">
       </command>
 
       <command
-            id="CAR Tool.customColumn"
+            id="PHULIMEX Tool.customColumn"
             name="Custom column">
       </command>
       <command
             defaultHandler="handler.RemoveFilterHandler"
-            id="CAR Tool.removeFilter"
+            id="PHULIMEX Tool.removeFilter"
             name="Remove Filter">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:true"
@@ -631,57 +631,57 @@
       </command>
       <command
             defaultHandler="handler.AnalysisResult_BarchartHandler"
-            id="CAR Tool.AnalysisResult_barchartcommand"
+            id="PHULIMEX Tool.AnalysisResult_barchartcommand"
             name="Bar Charts">
       </command>
       
       <command
-            id="CAR Tool.export_Handler"
+            id="PHULIMEX Tool.export_Handler"
             name="Export">
       </command>
       <command
             defaultHandler="handler.AnalysisResult_LambdaChartHandler"
-            id="CAR Tool.AnalysisResult_lambdachartcommand"
+            id="PHULIMEX Tool.AnalysisResult_lambdachartcommand"
             name="Lambda Charts">
       </command>
       <command
             defaultHandler="handler.AnalysisResult_MetricsChartHandler"
-            id="CAR Tool.AnalysisResult_metricschartcommand"
+            id="PHULIMEX Tool.AnalysisResult_metricschartcommand"
             name="Metrics Charts">
       </command>
       <command
             defaultHandler="handler.AnalysisResult_Barchart_HorizantalHandler"
-            id="CAR Tool.AnalysisResult_barchart_Horizantalcommand"
+            id="PHULIMEX Tool.AnalysisResult_barchart_Horizantalcommand"
             name="Bar Charts">
       </command>
       <command
             defaultHandler="handler.AnalysisResult_Metrics_HorizantalChartHandler"
-            id="CAR Tool.AnalysisResult_metricschart_Horizantalcommand"
+            id="PHULIMEX Tool.AnalysisResult_metricschart_Horizantalcommand"
             name="Metrics Charts">
       </command>
       <command
             defaultHandler="handler.AnalysisResult_Lambda_HorizantalChartHandler"
-            id="CAR Tool.AnalysisResult_lambdachart_Horizantalcommand"
+            id="PHULIMEX Tool.AnalysisResult_lambdachart_Horizantalcommand"
             name="Lambda Charts">
       </command>
       <command
             defaultHandler="handler.VariantsHandler"
-            id="CAR Tool.Variants"
+            id="PHULIMEX Tool.Variants"
             name="Activate VAM">
       </command>
       <command
             defaultHandler="handler.ExportDFAHandler"
-            id="CAR Tool.ExportDFA"
+            id="PHULIMEX Tool.ExportDFA"
             name="Export DFA">
       </command>
 	  <command
 	    defaultHandler="handler.ExportSYSHandler"
-	    id="CAR Tool.ExportSYS"
+	    id="PHULIMEX Tool.ExportSYS"
 	    name="Export SYS">
       </command>
       <command
             defaultHandler="handler.TransientHandler"
-            id="CAR Tool.Type"
+            id="PHULIMEX Tool.Type"
             name="Transient">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -690,7 +690,7 @@
       </command>
       <command
             defaultHandler="handler.PermanentHandler"
-            id="CAR Tool.Permanent"
+            id="PHULIMEX Tool.Permanent"
             name="Permanent">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:true"
@@ -701,7 +701,7 @@
         <!--P3R119-->  
        <command
             defaultHandler="handler.AllHandler"
-            id="CAR Tool.Both"
+            id="PHULIMEX Tool.Both"
             name="ALL">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -710,53 +710,53 @@
           </command>
       
       <command
-            id="CAR Tool.export_html"
+            id="PHULIMEX Tool.export_html"
             name="Export As HTML">
       </command>
       <command
-            id="CAR Tool.exportCSV"
+            id="PHULIMEX Tool.exportCSV"
             name="Export As CSV">
       </command>
       <command
-            id="CAR Tool.exportTSV"
+            id="PHULIMEX Tool.exportTSV"
             name="Export As TSV">
       </command>
       <command
             defaultHandler="handler.ExportBlankTemplate"
-            id="CAR Tool.exportblanktemplate"
+            id="PHULIMEX Tool.exportblanktemplate"
             name="Export Blank Template">
       </command>
       <command
             defaultHandler="handler.UpgradelibraryHandler"
-            id="CAR Tool.Upgradelibrary"
+            id="PHULIMEX Tool.Upgradelibrary"
             name="Update Library">
       </command>
       <command
             defaultHandler="handler.UploadlibraryHandler"
-            id="CAR Tool.Uploadlibrary"
+            id="PHULIMEX Tool.Uploadlibrary"
             name="Upload Library">
       </command>
       <command
             defaultHandler="handler.ExportLibraryHandler"
-            id="CAR Tool.export_library_Handler"
+            id="PHULIMEX Tool.export_library_Handler"
             name="Export Library">
       </command>
       <command
-            id="CAR Tool.search"
+            id="PHULIMEX Tool.search"
             name="Find">
       </command>
       <command
             defaultHandler="handler.LibraryLicenseInformationHandler"
-            id="CAR Tool.LibraryLicenseInformation_Handler"
+            id="PHULIMEX Tool.LibraryLicenseInformation_Handler"
             name="Library Licence Information">
       </command>
       <command
-            id="CAR Tool.exportonly"
+            id="PHULIMEX Tool.exportonly"
             name="Export Only">
       </command>
       <command
             defaultHandler="handler.LfmHandler"
-            id="CAR Tool.LFM"
+            id="PHULIMEX Tool.LFM"
             name="LFM Target">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -765,7 +765,7 @@
       </command>
       <command
             defaultHandler="handler.SpfmHandler"
-            id="CAR Tool.SPFM"
+            id="PHULIMEX Tool.SPFM"
             name="SPFM Target">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -773,30 +773,30 @@
          </state>
       </command>
       <command
-            id="CAR Tool.ImageFullScreenshot"
+            id="PHULIMEX Tool.ImageFullScreenshot"
             name="Image Full Screenshot">
       </command>
       <command
-            id="CAR Tool.ExportToImage"
+            id="PHULIMEX Tool.ExportToImage"
             name="Export To Image">
       </command>
       <command
             defaultHandler="handler.TabHandler"
-            id="CAR Tool.tabhandler"
+            id="PHULIMEX Tool.tabhandler"
             name="Move Forward">
       </command>
       <command
             defaultHandler="handler.ShiftTab"
-            id="CAR Tool.shifttabhandler"
+            id="PHULIMEX Tool.shifttabhandler"
             name="Move Backward">
       </command>
       <command
-            id="CAR Tool.SnapsortHanlder"
+            id="PHULIMEX Tool.SnapsortHanlder"
             name="Snapshot">
       </command>
       <command
             defaultHandler="handler.ComponentChart"
-            id="CAR Tool.ComponentChart"
+            id="PHULIMEX Tool.ComponentChart"
             name="Entire Design">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -805,7 +805,7 @@
       </command>
       <command
             defaultHandler="handler.SelectionChart"
-            id="CAR Tool.SelectionChart"
+            id="PHULIMEX Tool.SelectionChart"
             name="Selected Hierarchy">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -814,7 +814,7 @@
       </command>
       <command
             defaultHandler="handler.ElementChart"
-            id="CAR Tool.ElementChart"
+            id="PHULIMEX Tool.ElementChart"
             name="Element">
          <state
                class="org.eclipse.ui.handlers.RegistryToggleState:false"
@@ -822,7 +822,7 @@
          </state>
       </command>
       <command
-            id="CAR Tool.Copy_EntireEntry"
+            id="PHULIMEX Tool.Copy_EntireEntry"
             name="Copy Entire Entry">
       </command>
    </extension>
@@ -834,7 +834,7 @@
                label="Edit"
                tooltip="Edit">
             <command
-                  commandId="CAR Tool.Cut"
+                  commandId="PHULIMEX Tool.Cut"
                   icon="icons/cut.png"
                   label="Cut"
                   style="push"
@@ -850,32 +850,32 @@
                </visibleWhen>
             </command>
             <command
-                  commandId="CAR Tool.Copy"
+                  commandId="PHULIMEX Tool.Copy"
                   icon="icons/copy.png"
                   label="Copy Highlighted Cell Only"
                   style="push"
                   tooltip="Copy Highlighted Cell Only">
             </command>
             <command
-                  commandId="CAR Tool.Copy_EntireEntry"
+                  commandId="PHULIMEX Tool.Copy_EntireEntry"
                   icon="icons/copy.png"
                   label="Copy Entire Entry"
                   style="push"
                   tooltip="Copy Entire Entry">
             </command>
             <command
-                  commandId="CAR Tool.Paste"
+                  commandId="PHULIMEX Tool.Paste"
                   icon="icons/paste.png"
                   label="Paste"
                   style="push"
                   tooltip="Paste">
             </command>
             <separator
-                  name="CAR Tool.separator3"
+                  name="PHULIMEX Tool.separator3"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.Add"
+                  commandId="PHULIMEX Tool.Add"
                   disabledIcon="icons/add_btn_disable.png"
                   icon="icons/add_btn.png"
                   label="Add New Entry"
@@ -891,29 +891,29 @@
             </command>
             <!--#SATYAM-->
              <separator
-                  name="CAR Tool.separator4"
+                  name="PHULIMEX Tool.separator4"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.undo"
+                  commandId="PHULIMEX Tool.undo"
                   icon="icons/undo.png"
                   label="Undo"
                   style="push"
                   tooltip="Undo operations">
              </command>
              <separator
-                  name="CAR Tool.separator5"
+                  name="PHULIMEX Tool.separator5"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.redo"
+                  commandId="PHULIMEX Tool.redo"
                   icon="icons/redo.png"
                   label="Redo"
                   style="push"
                   tooltip="Redo operations">
             </command>
             <separator
-                  name="CAR Tool.separator6"
+                  name="PHULIMEX Tool.separator6"
                   visible="true">
             </separator>
             <!--#SATYAM-->
@@ -922,81 +922,81 @@
                label="Modules"
                tooltip="Modules">
             <command
-                  commandId="CAR Tool.EmbeddedComand"
+                  commandId="PHULIMEX Tool.EmbeddedComand"
                   icon="icons/license-icon-18.png"
                   label="Licence Controller"
                   style="push"
                   tooltip="Licence Controller">
             </command>
             <separator
-                  name="CAR Tool.separator1"
+                  name="PHULIMEX Tool.separator1"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.CoverSheetcommand"
+                  commandId="PHULIMEX Tool.CoverSheetcommand"
                   icon="icons/cover-sheet.png"
                   label="Coversheet"
                   style="push"
                   tooltip="Coversheet">
             </command>
             <command
-                  commandId="CAR Tool.ParameterConfigurationcommand"
+                  commandId="PHULIMEX Tool.ParameterConfigurationcommand"
                   icon="icons/PA.png"
                   label="Analysis Parameters"
                   style="push"
                   tooltip="Analysis Parameters">
             </command>
             <command
-                  commandId="CAR Tool.FITCharacteristicscommand"
+                  commandId="PHULIMEX Tool.FITCharacteristicscommand"
                   icon="icons/FIT.png"
                   label="FIT Characteristics                  "
                   style="push"
                   tooltip="FIT Characteristics">
             </command>
             <command
-                  commandId="CAR Tool.FaultCharacterisationscommand"
+                  commandId="PHULIMEX Tool.FaultCharacterisationscommand"
                   icon="icons/fault.png"
                   label="Fault Characterisations          "
                   style="push"
                   tooltip="Fault Characterisations ">
             </command>
             <command
-                  commandId="CAR Tool.HWDescriptioncommand"
+                  commandId="PHULIMEX Tool.HWDescriptioncommand"
                   icon="icons/HD.png"
                   label="HW Description"
                   style="push"
                   tooltip="HW Description">
             </command>
             <command
-                  commandId="CAR Tool.SafetyMechanismscommand"
+                  commandId="PHULIMEX Tool.SafetyMechanismscommand"
                   icon="icons/SM.png"
                   label="Safety Mechanisms"
                   style="push"
                   tooltip="Safety Mechanisms">
             </command>
             <command
-                  commandId="CARTool.HardwareAnalysiscommand"
+                  commandId="PHULIMEXTool.HardwareAnalysiscommand"
                   icon="icons/HA.png"
                   label="HW Analysis"
                   style="push"
                   tooltip="HW Analysis">
             </command>
             <command
-                  commandId="CAR Tool.AnalysisResultEditor"
+                  commandId="PHULIMEX Tool.AnalysisResultEditor"
                   icon="icons/AR.png"
                   label="Analysis Results                     "
                   style="push"
                   tooltip="Analysis Results">
             </command>
             <command
-                  commandId="CAR Tool.Variants"
+                  commandId="PHULIMEX Tool.Variants"
                   icon="icons/Variants-20.png"
                   label="Variants"
                   style="push"
                   tooltip="Variants">
             </command>
             <command
-                  commandId="CAR Tool.overviewHandler"
+                  commandId="PHULIMEX Tool.overviewHandler"
                   icon="icons/overview_icon.png"
                   label="Overview"
                   style="push"
@@ -1012,7 +1012,7 @@
                </visibleWhen>
             </command>
             <separator
-                  name="CAR Tool.separator2"
+                  name="PHULIMEX Tool.separator2"
                   visible="true">
             </separator>
             <menu
@@ -1024,14 +1024,14 @@
                      label="Lambda"
                      tooltip="Lambda">
                   <command
-                        commandId="CAR Tool.AnalysisResult_lambdachartcommand"
+                        commandId="PHULIMEX Tool.AnalysisResult_lambdachartcommand"
                         icon="icons/Project/Vertical.png"
                         label="Vertical"
                         style="push"
                         tooltip="Vertical">
                   </command>
                   <command
-                        commandId="CAR Tool.AnalysisResult_lambdachart_Horizantalcommand"
+                        commandId="PHULIMEX Tool.AnalysisResult_lambdachart_Horizantalcommand"
                         icon="icons/Project/Horizontal.png"
                         label="Horizontal"
                         style="push"
@@ -1043,14 +1043,14 @@
                      label="Metrics"
                      tooltip="Metrics">
                   <command
-                        commandId="CAR Tool.AnalysisResult_metricschartcommand"
+                        commandId="PHULIMEX Tool.AnalysisResult_metricschartcommand"
                         icon="icons/Project/Vertical.png"
                         label="Vertical"
                         style="push"
                         tooltip="Vertical">
                   </command>
                   <command
-                        commandId="CAR Tool.AnalysisResult_metricschart_Horizantalcommand"
+                        commandId="PHULIMEX Tool.AnalysisResult_metricschart_Horizantalcommand"
                         icon="icons/Project/Horizontal.png"
                         label="Horizontal"
                         style="push"
@@ -1062,14 +1062,14 @@
                      label="PMHF"
                      tooltip="PMHF">
                   <command
-                        commandId="CAR Tool.AnalysisResult_barchartcommand"
+                        commandId="PHULIMEX Tool.AnalysisResult_barchartcommand"
                         icon="icons/Project/Vertical.png"
                         label="Vertical"
                         style="pulldown"
                         tooltip="Vertical">
                   </command>
                   <command
-                        commandId="CAR Tool.AnalysisResult_barchart_Horizantalcommand"
+                        commandId="PHULIMEX Tool.AnalysisResult_barchart_Horizantalcommand"
                         icon="icons/Project/Horizontal.png"
                         label="Horizontal"
                         style="push"
@@ -1078,32 +1078,32 @@
                </menu>
             </menu>
             <separator
-                  name="CAR Tool.sep"
+                  name="PHULIMEX Tool.sep"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.ErrorLogView"
+                  commandId="PHULIMEX Tool.ErrorLogView"
                   icon="icons/error.png"
                   label="Error Logs"
                   style="push"
                   tooltip="Error Logs">
             </command>
             <command
-                  commandId="CAR Tool.AuditLogView"
+                  commandId="PHULIMEX Tool.AuditLogView"
                   icon="icons/audit.png"
                   label="Change History"
                   style="push"
                   tooltip="Change History">
             </command>
             <command
-                  commandId="CAR Tool.DocumentViewOpenCommand"
+                  commandId="PHULIMEX Tool.DocumentViewOpenCommand"
                   icon="icons/document20.png"
                   label="Documents"
                   style="push"
                   tooltip="Documents">
             </command>
             <command
-                  commandId="CAR Tool.SavedSearchViewHandler"
+                  commandId="PHULIMEX Tool.SavedSearchViewHandler"
                   icon="icons/saved-filter-20.png"
                   label="Saved Filters"
                   style="push"
@@ -1117,14 +1117,14 @@
                
       <!--Multiple Window-->
             <command
-                  commandId="CAR Tool.NewWindow"
+                  commandId="PHULIMEX Tool.NewWindow"
                   label="New Window"
                   style="push">
             </command>
       <!--Multiple Window-->
             
             <separator
-                  name="CAR Tool.separator3"
+                  name="PHULIMEX Tool.separator3"
                   visible="true">
             </separator>
             <menu
@@ -1142,13 +1142,13 @@
                   tooltip="Customize Perspective">
             </command-->
             <command
-                  commandId="CAR Tool.SavePerspective"
+                  commandId="PHULIMEX Tool.SavePerspective"
                   label="Save Perspective As"
                   style="push"
                   tooltip="Save Perspective As">
             </command>
             <command
-                  commandId="CAR Tool.DeletePerspective"
+                  commandId="PHULIMEX Tool.DeletePerspective"
                   label="Delete Perspective"
                   style="push"
                   tooltip="Delete Perspective">
@@ -1177,7 +1177,7 @@
                label="Tools"
                tooltip="Tools">
             <menu
-                  commandId="CAR Tool.Screenshot"
+                  commandId="PHULIMEX Tool.Screenshot"
                   icon="icons/camera20x20.png"
                   label="Screenshot"
                   tooltip="Capture Screenshot">
@@ -1185,14 +1185,14 @@
                      label="Active Module Screenshot"
                      tooltip="Active Module Screenshot">
                   <command
-                        commandId="CAR Tool.ExportToPDF"
+                        commandId="PHULIMEX Tool.ExportToPDF"
                         icon="icons/pdf_20.png"
                         label="PDF"
                         style="push"
                         tooltip="PDF">
                   </command>
                   <command
-                        commandId="CAR Tool.ExportToImage"
+                        commandId="PHULIMEX Tool.ExportToImage"
                         icon="icons/Active_image.png"
                         label="Image"
                         style="push"
@@ -1203,14 +1203,14 @@
                      label="Full Screen Screenshot"
                      tooltip="Full Screen Screenshot">
                   <command
-                        commandId="CAR Tool.FullScreenshot"
+                        commandId="PHULIMEX Tool.FullScreenshot"
                         icon="icons/pdf_20.png"
                         label="PDF"
                         style="push"
                         tooltip="PDF">
                   </command>
                   <command
-                        commandId="CAR Tool.ImageFullScreenshot"
+                        commandId="PHULIMEX Tool.ImageFullScreenshot"
                         icon="icons/image_shot.png"
                         label="Image"
                         style="push"
@@ -1219,61 +1219,61 @@
                </menu>
             </menu>
             <command
-                  commandId="CAR Tool.search"
+                  commandId="PHULIMEX Tool.search"
                   icon="icons/search-binocular-20x20.png"
                   label="Search"
                   style="push"
                   tooltip="Find and Replace">
             </command>
             <separator
-                  name="CAR Tool.separator6"
+                  name="PHULIMEX Tool.separator6"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.FilterColumn"
+                  commandId="PHULIMEX Tool.FilterColumn"
                   icon="icons/filter-play.png"
                   label="Apply/Remove filter"
                   style="toggle"
                   tooltip="Apply/Remove filter">
             </command>
             <command
-                  commandId="CAR Tool.addFilter"
+                  commandId="PHULIMEX Tool.addFilter"
                   icon="icons/filter-20x20.png"
                   label="Filter"
                   style="push"
                   tooltip="Filter">
             </command>
             <separator
-                  name="CAR Tool.separator5"
+                  name="PHULIMEX Tool.separator5"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.Permanent"
+                  commandId="PHULIMEX Tool.Permanent"
                   icon="icons/Permanent-20.png"
                   label="Permanent"
                   style="toggle"
                   tooltip="Permanent">
             </command>
             <command
-                  commandId="CAR Tool.Type"
+                  commandId="PHULIMEX Tool.Type"
                   icon="icons/Transient-20.png"
                   label="Transient"
                   style="toggle"
                   tooltip="Transient">
             </command>
              <command
-                  commandId="CAR Tool.Both"
+                  commandId="PHULIMEX Tool.Both"
                   icon="icons/Transient-permanent-20.png"
                   label="Both"
                   style="toggle"
                   tooltip="Both">
             </command>
             <separator
-                  name="CAR Tool.separator7"
+                  name="PHULIMEX Tool.separator7"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.assignFIT"
+                  commandId="PHULIMEX Tool.assignFIT"
                   disabledIcon="icons/assign-value-20x20-gray.png"
                   icon="icons/assign-value-20x20.png"
                   label="Assign FIT Characteristic"
@@ -1281,7 +1281,7 @@
                   tooltip="Assign FIT Characteristic">
             </command>
             <separator
-                  name="CAR Tool.separator8"
+                  name="PHULIMEX Tool.separator8"
                   visible="true">
             </separator>
             <menu
@@ -1289,21 +1289,21 @@
                   label="Backup/Restore"
                   tooltip="Backup/Restore">
                <command
-                     commandId="CAR Tool.BackupData"
+                     commandId="PHULIMEX Tool.BackupData"
                      icon="icons/BackupData.png"
                      label="Backup Data"
                      style="push"
                      tooltip="Backup Data">
                </command>
                <command
-                     commandId="CAR Tool.RestoreData"
+                     commandId="PHULIMEX Tool.RestoreData"
                      icon="icons/RestoreData.png"
                      label="Restore Data"
                      style="push"
                      tooltip="Restore Data">
                 </command>
                 <command
-                     commandId="CAR Tool.MigrateData"
+                     commandId="PHULIMEX Tool.MigrateData"
                      icon="icons/Migratedata.png"
                      label="Migrate Data"
                      style="push"
@@ -1311,18 +1311,18 @@
                </command>
             </menu>
             <separator
-                  name="CAR Tool.separator1"
+                  name="PHULIMEX Tool.separator1"
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.concurrentview"
+                  commandId="PHULIMEX Tool.concurrentview"
                   icon="icons/concurrent_functionality-20.png"
                   label="List of Concurrent Functionality"
                   style="push"
                   tooltip="List of Concurrent Functionality">
             </command>
             <command
-                  commandId="CAR Tool.ListofLabelFunctionality"
+                  commandId="PHULIMEX Tool.ListofLabelFunctionality"
                   icon="icons/label.png"
                   label="List of Label Functionality"
                   style="push"
@@ -1334,24 +1334,24 @@
             allPopups="false"
             locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
          <toolbar
-               id="CAR Tool.toolbar1"
-               label="CAR Tool">
+               id="PHULIMEX Tool.toolbar1"
+               label="PHULIMEX Tool">
             <command
-                  commandId="CAR Tool.Import"
+                  commandId="PHULIMEX Tool.Import"
                   icon="icons/import_wiz.png"
                   label="Import Data"
                   style="push"
                   tooltip="Import Data">
             </command>
             <command
-                  commandId="CAR Tool.blankHandler"
+                  commandId="PHULIMEX Tool.blankHandler"
                   icon="icons/export_wiz.png"
                   label="Export"
                   style="pulldown"
                   tooltip="Export">
             </command>
              <command 
-             	commandId="CAR Tool.Add" 
+             	commandId="PHULIMEX Tool.Add" 
              	disabledIcon="icons/add_btn_disable.png" 
              	icon="icons/add_btn.png" 
              	label="Add New Entry" 
@@ -1366,7 +1366,7 @@
                   tooltip="Delete Selected Entries">
             </command>
             <command
-                  commandId="CAR Tool.assignFIT"
+                  commandId="PHULIMEX Tool.assignFIT"
                   disabledIcon="icons/assign-value-20x20-gray.png"
                   icon="icons/assign-value-20x20.png"
                   label="Assign FIT Characteristic"
@@ -1374,14 +1374,14 @@
                   tooltip="Assign FIT Characteristic">
             </command>
             <command
-                  commandId="CAR Tool.SnapsortHanlder"
+                  commandId="PHULIMEX Tool.SnapsortHanlder"
                   icon="icons/camera20x20.png"
                   label="Screenshot"
                   style="pulldown"
                   tooltip="Screenshot">
             </command>
             <command
-                  commandId="CAR Tool.search"
+                  commandId="PHULIMEX Tool.search"
                   icon="icons/search-binocular-20x20.png"
                   label="Search"
                   style="push"
@@ -1393,21 +1393,21 @@
                   style="push">
             </command>
             <command
-                  commandId="CAR Tool.SavedSearchViewHandler"
+                  commandId="PHULIMEX Tool.SavedSearchViewHandler"
                   icon="icons/saved-filter-20.png"
                   label="Saved Filters"
                   style="push"
                   tooltip="Saved Filters">
             </command>
             <command
-                  commandId="CAR Tool.FilterColumn"
+                  commandId="PHULIMEX Tool.FilterColumn"
                   icon="icons/filter-play.png"
                   label="Apply/Remove filter"
                   style="toggle"
                   tooltip="Apply/Remove filter">
             </command>
             <command
-                  commandId="CAR Tool.addFilter"
+                  commandId="PHULIMEX Tool.addFilter"
                   icon="icons/filter-20x20.png"
                   label="Create New Filter"
                   style="push"
@@ -1419,21 +1419,21 @@
                   style="push">
             </command>
             <command
-                  commandId="CAR Tool.CoverSheetcommand"
+                  commandId="PHULIMEX Tool.CoverSheetcommand"
                   icon="icons/cover-sheet.png"
                   label="Coversheet"
                   style="push"
                   tooltip="Coversheet">
             </command>
             <command
-                  commandId="CAR Tool.ParameterConfigurationcommand"
+                  commandId="PHULIMEX Tool.ParameterConfigurationcommand"
                   icon="icons/PA.png"
                   label="Analysis Parameters"
                   style="push"
                   tooltip="Analysis Parameters">
             </command>
             <command
-                  commandId="CAR Tool.FITCharacteristicscommand"
+                  commandId="PHULIMEX Tool.FITCharacteristicscommand"
                   icon="icons/FIT.png"
                   label="FIT Characteristics"
                   style="push"
@@ -1444,35 +1444,35 @@
                   visible="true">
             </separator>
             <command
-                  commandId="CAR Tool.FaultCharacterisationscommand"
+                  commandId="PHULIMEX Tool.FaultCharacterisationscommand"
                   icon="icons/fault.png"
                   label="Fault Characterisations"
                   style="push"
                   tooltip="Fault Characterisations ">
             </command>
             <command
-                  commandId="CAR Tool.HWDescriptioncommand"
+                  commandId="PHULIMEX Tool.HWDescriptioncommand"
                   icon="icons/HD.png"
                   label="HW Description"
                   style="push"
                   tooltip="HW Description">
             </command>
             <command
-                  commandId="CAR Tool.SafetyMechanismscommand"
+                  commandId="PHULIMEX Tool.SafetyMechanismscommand"
                   icon="icons/SM.png"
                   label="Safety Mechanisms"
                   style="push"
                   tooltip="Safety Mechanisms">
             </command>
             <command
-                  commandId="CARTool.HardwareAnalysiscommand"
+                  commandId="PHULIMEXTool.HardwareAnalysiscommand"
                   icon="icons/HA.png"
                   label="HW Analysis"
                   style="push"
                   tooltip="HW Analysis">
             </command>
             <command
-                  commandId="CAR Tool.AnalysisResultEditor"
+                  commandId="PHULIMEX Tool.AnalysisResultEditor"
                   icon="icons/AR.png"
                   label="Analysis Results"
                   style="push"
@@ -1484,7 +1484,7 @@
                   style="push">
             </command>
             <command
-                  commandId="CAR Tool.AnalysisResult_barchartcommand"
+                  commandId="PHULIMEX Tool.AnalysisResult_barchartcommand"
                   disabledIcon="icons/BAR_Disabled.png"
                   icon="icons/BAR.png"
                   label="Charts"
@@ -1492,7 +1492,7 @@
                   tooltip="Charts">
             </command>
             <command
-                  commandId="CAR Tool.SPFM"
+                  commandId="PHULIMEX Tool.SPFM"
                   icon="icons/Project/Vertical-01.png"
                   label="SPFM Chart"
                   style="toggle"
@@ -1508,7 +1508,7 @@
                </visibleWhen>
             </command>
             <command
-                  commandId="CAR Tool.LFM"
+                  commandId="PHULIMEX Tool.LFM"
                   icon="icons/Project/Vertical-02.png"
                   label="LFM Chart"
                   style="toggle"
@@ -1524,7 +1524,7 @@
                </visibleWhen>
             </command>
             <command
-                  commandId="CAR Tool.ComponentChart"
+                  commandId="PHULIMEX Tool.ComponentChart"
                   icon="icons/componetChart.png"
                   label="Entire Design"
                   style="toggle"
@@ -1540,7 +1540,7 @@
                </visibleWhen>
             </command>
             <command
-                  commandId="CAR Tool.SelectionChart"
+                  commandId="PHULIMEX Tool.SelectionChart"
                   icon="icons/SelectionChart.png"
                   label="Selected Hierarchy"
                   style="toggle"
@@ -1556,7 +1556,7 @@
                </visibleWhen>
             </command>
             <command
-                  commandId="CAR Tool.ElementChart"
+                  commandId="PHULIMEX Tool.ElementChart"
                   icon="icons/elementChart.png"
                   label="Selected Elements"
                   style="toggle"
@@ -1577,14 +1577,14 @@
                   style="push">
             </command>
             <command
-                  commandId="CAR Tool.Permanent"
+                  commandId="PHULIMEX Tool.Permanent"
                   icon="icons/P-16.png"
                   label="Permanent"
                   style="toggle"
                   tooltip="Permanent">
             </command>
             <command
-                  commandId="CAR Tool.Type"
+                  commandId="PHULIMEX Tool.Type"
                   icon="icons/T-16.png"
                   label="Transient"
                   style="toggle"
@@ -1592,7 +1592,7 @@
             </command>
           <!--P3R119-->  
              <command
-                  commandId="CAR Tool.Both"
+                  commandId="PHULIMEX Tool.Both"
                   icon="icons/Transient-permanent.png"
                   label="Transient"
                   style="toggle"
@@ -1605,7 +1605,7 @@
                   style="push">
             </command>
             <command
-                  commandId="CAR Tool.QuickeditCommand"
+                  commandId="PHULIMEX Tool.QuickeditCommand"
                   icon="icons/quick_edit20.png"
                   label="Quick Edit"
                   style="push"
@@ -1618,7 +1618,7 @@
                   style="push">
             </command>
             <command
-                  commandId="CAR Tool.AutoRefreshCommand"
+                  commandId="PHULIMEX Tool.AutoRefreshCommand"
                   icon="icons/Auto-20.png"
                   label="Auto Refresh"
                   style="toggle"
@@ -1627,7 +1627,7 @@
             </command>
             <P3R122>  
             <command
-                  commandId="CAR Tool.ManualRefreshCommand"
+                  commandId="PHULIMEX Tool.ManualRefreshCommand"
                   icon="icons/manual-20.png"
                   label="Manual Refresh"
                   style="toggle"
@@ -1635,7 +1635,7 @@
             </command>
             <P3R122>  
             <command
-                  commandId="CAR Tool.DataChangeAutoCommand"
+                  commandId="PHULIMEX Tool.DataChangeAutoCommand"
                   icon="icons/green-20.png"
                   label="Auto Refresh"
                   style="toggle"
@@ -1644,7 +1644,7 @@
             </command>
             <P3R122>  
             <command
-                  commandId="CAR Tool.DataChangeManualCommand"
+                  commandId="PHULIMEX Tool.DataChangeManualCommand"
                   icon="icons/red-20.png"
                   label="Manual Refresh"
                   style="toggle"
@@ -1657,7 +1657,7 @@
                   style="push">
             </command>
             <command
-                  commandId="CAR Tool.LineWrapCommand"
+                  commandId="PHULIMEX Tool.LineWrapCommand"
                   icon="icons/text-wrap-18.png"
                   label="Wrap Lines"
                   style="toggle"
@@ -1665,7 +1665,7 @@
                   
             </command>
              <command
-                  commandId="CAR Tool.LineUnWrapCommand"
+                  commandId="PHULIMEX Tool.LineUnWrapCommand"
                   icon="icons/text-unwrap-18.png"
                   label="UnWrap Lines"
                   style="toggle"
@@ -1676,7 +1676,7 @@
             
             <!--P3R219-->
             <command
-                  commandId="CAR Tool.AutoSizeCommand"
+                  commandId="PHULIMEX Tool.AutoSizeCommand"
                   icon="icons/autosize-18.png"
                   label="Auto Size"
                   style="toggle"
@@ -1689,20 +1689,20 @@
       </menuContribution>
       <menuContribution
             allPopups="false"
-            locationURI="menu:CAR Tool.AnalysisResult_barchartcommand">
+            locationURI="menu:PHULIMEX Tool.AnalysisResult_barchartcommand">
          <menu
                icon="icons/Project/Vertical.png"
                label="Lambda"
                tooltip="Lambda">
             <command
-                  commandId="CAR Tool.AnalysisResult_lambdachartcommand"
+                  commandId="PHULIMEX Tool.AnalysisResult_lambdachartcommand"
                   icon="icons/Project/Vertical.png"
                   label="Vertical"
                   style="push"
                   tooltip="Vertical">
             </command>
             <command
-                  commandId="CAR Tool.AnalysisResult_lambdachart_Horizantalcommand"
+                  commandId="PHULIMEX Tool.AnalysisResult_lambdachart_Horizantalcommand"
                   icon="icons/Project/Horizontal.png"
                   label="Horizontal"
                   style="push"
@@ -1714,14 +1714,14 @@
                label="Metrics"
                tooltip="Metrics">
             <command
-                  commandId="CAR Tool.AnalysisResult_metricschartcommand"
+                  commandId="PHULIMEX Tool.AnalysisResult_metricschartcommand"
                   icon="icons/Project/Vertical.png"
                   label="Vertical"
                   style="push"
                   tooltip="Vertical">
             </command>
             <command
-                  commandId="CAR Tool.AnalysisResult_metricschart_Horizantalcommand"
+                  commandId="PHULIMEX Tool.AnalysisResult_metricschart_Horizantalcommand"
                   icon="icons/Project/Horizontal.png"
                   label="Horizontal"
                   style="push"
@@ -1733,14 +1733,14 @@
                label="PMHF"
                tooltip="PMHF">
             <command
-                  commandId="CAR Tool.AnalysisResult_barchartcommand"
+                  commandId="PHULIMEX Tool.AnalysisResult_barchartcommand"
                   icon="icons/Project/Vertical.png"
                   label="Vertical"
                   style="pulldown"
                   tooltip="Vertical">
             </command>
             <command
-                  commandId="CAR Tool.AnalysisResult_barchart_Horizantalcommand"
+                  commandId="PHULIMEX Tool.AnalysisResult_barchart_Horizantalcommand"
                   icon="icons/Project/Horizontal.png"
                   label="Horizontal"
                   style="push"
@@ -1750,7 +1750,7 @@
       </menuContribution>
       <menuContribution
             allPopups="false"
-            locationURI="menu:CAR Tool.blankHandler">
+            locationURI="menu:PHULIMEX Tool.blankHandler">
          <menu
                icon="icons/ProductIcons/LOGO-16.png"
                id="Export"
@@ -1758,21 +1758,21 @@
                tooltip="Export">
          </menu>
          <command
-               commandId="CAR Tool.exportonly"
+               commandId="PHULIMEX Tool.exportonly"
                icon="icons/export_wiz.png"
                label="Export Active Module"
                style="push"
                tooltip="Export Active Module">
          </command>
          <command
-               commandId="CAR Tool.exportblanktemplate"
+               commandId="PHULIMEX Tool.exportblanktemplate"
                icon="icons/template-20.png"
                label="Export Reference Template"
                style="push"
                tooltip="Export Reference Template">
          </command>
          <command
-               commandId="CAR Tool.ExportDFA"
+               commandId="PHULIMEX Tool.ExportDFA"
                icon="icons/ExportDFA.png"
                label="Export DFA"
                style="push">
@@ -1787,7 +1787,7 @@
             </visibleWhen>
          </command>
          <command
-               commandId="CAR Tool.ExportSYS"
+               commandId="PHULIMEX Tool.ExportSYS"
                icon="icons/ExportSYS.png"
                label="Export SYS"
                style="push">
@@ -1806,28 +1806,28 @@
             allPopups="false"
             locationURI="menu:Export">
          <command
-               commandId="CAR Tool.export_Handler"
+               commandId="PHULIMEX Tool.export_Handler"
                icon="icons/excel_18.png"
                label="Export as Excel"
                style="pulldown"
                tooltip="Export as Excel">
          </command>
          <command
-               commandId="CAR Tool.export_html"
+               commandId="PHULIMEX Tool.export_html"
                icon="icons/html-5-logo.png"
                label="Export as HTML"
                style="push"
                tooltip="Export as HTML">
          </command>
          <command
-               commandId="CAR Tool.exportCSV"
+               commandId="PHULIMEX Tool.exportCSV"
                icon="icons/CVS-18.png"
                label="Export as CSV"
                style="push"
                tooltip="Export as CSV">
          </command>
          <command
-               commandId="CAR Tool.exportTSV"
+               commandId="PHULIMEX Tool.exportTSV"
                icon="icons/TSV-18.png"
                label="Export as TSV"
                style="push"
@@ -1836,19 +1836,19 @@
       </menuContribution>
          <menuContribution
            allPopups="false"
-           locationURI="menu:CAR Tool.SnapsortHanlder">
+           locationURI="menu:PHULIMEX Tool.SnapsortHanlder">
         <menu
               label="Active Module Screenshot"
               tooltip="Active Module Screenshot">
            <command
-                 commandId="CAR Tool.ExportToPDF"
+                 commandId="PHULIMEX Tool.ExportToPDF"
                  icon="icons/pdf_20.png"
                  label="PDF"
                  style="push"
                  tooltip="PDF">
            </command>
            <command
-                 commandId="CAR Tool.ExportToImage"
+                 commandId="PHULIMEX Tool.ExportToImage"
                  icon="icons/Active_image.png"
                  label="Image"
                  style="push"
@@ -1859,14 +1859,14 @@
               label="Full Screen Screenshot"
               tooltip="Full Screen Screenshot">
            <command
-                 commandId="CAR Tool.FullScreenshot"
+                 commandId="PHULIMEX Tool.FullScreenshot"
                  icon="icons/pdf_20.png"
                  label="PDF"
                  style="push"
                  tooltip="PDF">
            </command>
            <command
-                 commandId="CAR Tool.ImageFullScreenshot"
+                 commandId="PHULIMEX Tool.ImageFullScreenshot"
                  icon="icons/image_shot.png"
                  label="Image"
                  style="push"
@@ -1881,7 +1881,7 @@
             targetID="*">
           <view
                 closeable="false"
-                id="car.view.HardwareElements"
+                id="PHULIMEX.view.HardwareElements"
                 minimized="true"
                 moveable="false"
                 ratio="0.20f"
@@ -1892,7 +1892,7 @@
          </view>
          <view
                closeable="true"
-               id="car.view.AuditLogs"
+               id="PHULIMEX.view.AuditLogs"
                minimized="true"
                moveable="true"
                ratio="0.72f"
@@ -1903,29 +1903,29 @@
          </view>
          <view
                closeable="true"
-               id="car.view.ErrorLogs"
+               id="PHULIMEX.view.ErrorLogs"
                minimized="false"
                moveable="true"
                ratio="0.72f"
                relationship="stack"
-               relative="car.view.AuditLogs"
+               relative="PHULIMEX.view.AuditLogs"
                showTitle="true"
                visible="true">
          </view>
          <view
                closeable="true"
-               id="car.view.SaveSearchView"
+               id="PHULIMEX.view.SaveSearchView"
                minimized="false"
                moveable="true"
                ratio="0.60f"
                relationship="bottom"
-               relative="car.view.HardwareElements"
+               relative="PHULIMEX.view.HardwareElements"
                showTitle="true"
                visible="false">
          </view>
          <view
                closeable="true"
-               id="car.view.FaultCharacterisation_FM"
+               id="PHULIMEX.view.FaultCharacterisation_FM"
                minimized="false"
                moveable="true"
                ratio="0.60f"
@@ -1936,7 +1936,7 @@
          </view>
          <view
                closeable="true"
-               id="car.views.HardwareElementFuctionality"
+               id="PHULIMEX.views.HardwareElementFuctionality"
                minimized="true"
                moveable="true"
                relationship="bottom"
@@ -1956,7 +1956,7 @@
          </view>
          <view
                closeable="true"
-               id="car.view.faultcoverage"
+               id="PHULIMEX.view.faultcoverage"
                minimized="false"
                moveable="true"
                relationship="bottom"
@@ -1965,7 +1965,7 @@
          </view>
          <view
                closeable="true"
-               id="car.views.HardwareParts"
+               id="PHULIMEX.views.HardwareParts"
                minimized="false"
                moveable="true"
                ratio="0.73f"
@@ -1993,13 +1993,13 @@
                moveable="true"
                ratio="0.72f"
                relationship="stack"
-               relative="car.view.ErrorLogs"
+               relative="PHULIMEX.view.ErrorLogs"
                showTitle="true"
                visible="true">
          </view>
          <view
                closeable="true"
-               id="CAR Tool.UsersInformationView"
+               id="PHULIMEX Tool.UsersInformationView"
                minimized="false"
                moveable="true"
                ratio="0.80f"
@@ -2014,116 +2014,116 @@
    <extension
          point="org.eclipse.ui.bindings">
       <key
-            commandId="CAR Tool.CoverSheetcommand"
+            commandId="PHULIMEX Tool.CoverSheetcommand"
             schemeId="myscheme"
             sequence="M1+M2+F1">
       </key>
       <key
-            commandId="CAR Tool.ParameterConfigurationcommand"
+            commandId="PHULIMEX Tool.ParameterConfigurationcommand"
             schemeId="myscheme"
             sequence="M1+M2+F2">
       </key>
       
       
       <key
-            commandId="CAR Tool.FITCharacteristicscommand"
+            commandId="PHULIMEX Tool.FITCharacteristicscommand"
             schemeId="myscheme"
             sequence="M1+M2+F3">
       </key>
       <key
-            commandId="CAR Tool.FaultCharacterisationscommand"
+            commandId="PHULIMEX Tool.FaultCharacterisationscommand"
             schemeId="myscheme"
             sequence="M1+M2+F4">
       </key>
       <key
-            commandId="CAR Tool.HWDescriptioncommand"
+            commandId="PHULIMEX Tool.HWDescriptioncommand"
             schemeId="myscheme"
             sequence="M1+M2+F5">
       </key>
       <key
-            commandId="CAR Tool.Restartcommand"
+            commandId="PHULIMEX Tool.Restartcommand"
             schemeId="myscheme"
             sequence="M1+M2+R">
       </key>
       
       <key
-		    commandId="CAR Tool.Refreshcommand"
+		    commandId="PHULIMEX Tool.Refreshcommand"
 		    schemeId="myscheme"
 		    sequence="F5">
       </key>
       
       <key
-            commandId="CAR Tool.SafetyMechanismscommand"
+            commandId="PHULIMEX Tool.SafetyMechanismscommand"
             schemeId="myscheme"
             sequence="M1+M2+F6">
       </key>
       <key
-            commandId="CARTool.HardwareAnalysiscommand"
+            commandId="PHULIMEXTool.HardwareAnalysiscommand"
             schemeId="myscheme"
             sequence="M1+M2+F7">
       </key>
       <key
-            commandId="CAR Tool.AnalysisResultEditor"
+            commandId="PHULIMEX Tool.AnalysisResultEditor"
             schemeId="myscheme"
             sequence="M1+M2+F8">
       </key>
       <key
-            commandId="CAR Tool.Variants"
+            commandId="PHULIMEX Tool.Variants"
             schemeId="myscheme"
             sequence="M1+M2+F9">
       </key>
       <key
-            commandId="CAR Tool.overviewHandler"
+            commandId="PHULIMEX Tool.overviewHandler"
             schemeId="myscheme"
             sequence="M1+M2+F12">
       </key>
       <key
-            commandId="CAR Tool.SavedSearchViewHandler"
+            commandId="PHULIMEX Tool.SavedSearchViewHandler"
             schemeId="myscheme"
             sequence="M1+M2+F10">
       </key>
       <key
-            commandId="CAR Tool.ErrorLogView"
+            commandId="PHULIMEX Tool.ErrorLogView"
             schemeId="myscheme"
             sequence="M1+M2+F11">
       </key>
       <key
-            commandId="CAR Tool.addFilter"
+            commandId="PHULIMEX Tool.addFilter"
             schemeId="myscheme"
             sequence="M1+L">
       </key>
       <key
-            commandId="CAR Tool.Cut"
+            commandId="PHULIMEX Tool.Cut"
             schemeId="myscheme"
             sequence="M1+X">
       </key>
       <key
-            commandId="CAR Tool.Add"
+            commandId="PHULIMEX Tool.Add"
             schemeId="myscheme"
             sequence="M1+N">
       </key>
       <key
-            commandId="CAR Tool.Deletecommand"
+            commandId="PHULIMEX Tool.Deletecommand"
             schemeId="myscheme"
             sequence="Delete">
       </key>
       <key
-            commandId="CAR Tool.rename"
+            commandId="PHULIMEX Tool.rename"
             schemeId="myscheme"
             sequence="F2">
       </key>
         <key
-            commandId="CAR Tool.goto"
+            commandId="PHULIMEX Tool.goto"
             schemeId="myscheme"
             sequence="Alt+B">
       </key>
        <key
-            commandId="CAR Tool.undo"
+            commandId="PHULIMEX Tool.undo"
             schemeId="myscheme"
             sequence="M1+Z">
       </key>
        <key
-            commandId="CAR Tool.redo"
+            commandId="PHULIMEX Tool.redo"
             schemeId="myscheme"
             sequence="M1+Y">
       </key>
@@ -2132,7 +2132,7 @@
             name="myscheme">
       </scheme>
       <key
-            commandId="CAR Tool.search"
+            commandId="PHULIMEX Tool.search"
             schemeId="myscheme"
             sequence="M1+F">
       </key>
@@ -2149,12 +2149,12 @@
             sequence="M1+M2+TAB">
       </key>
       <key
-            commandId="CAR Tool.tabhandler"
+            commandId="PHULIMEX Tool.tabhandler"
             schemeId="myscheme"
             sequence="TAB">
       </key>
       <key
-            commandId="CAR Tool.shifttabhandler"
+            commandId="PHULIMEX Tool.shifttabhandler"
             schemeId="myscheme"
             sequence="M2+TAB">
       </key>
@@ -2169,23 +2169,23 @@
             sequence="M1+C">
       </key>
       <key
-            commandId="CAR Tool.Paste"
+            commandId="PHULIMEX Tool.Paste"
             schemeId="myscheme"
             sequence="M1+v">
       </key>
       <key
-            commandId="CAR Tool.ToolTipFocus"
+            commandId="PHULIMEX Tool.ToolTipFocus"
             schemeId="myscheme"
             sequence="F3">
       </key>
       <key
-            commandId="CAR Tool.ToolTipOpen"
+            commandId="PHULIMEX Tool.ToolTipOpen"
             schemeId="myscheme"
             sequence="F4">
       </key>
       
       <key
-            commandId="CAR Tool.Checkspell"
+            commandId="PHULIMEX Tool.Checkspell"
             schemeId="myscheme"
             sequence="F7">
       </key>
@@ -2196,15 +2196,15 @@
       <perspective
             class="main.Perspective"
             fixed="true"
-            id="CAR.perspective"
-            name="CAR">
+            id="PHULIMEX.perspective"
+            name="PHULIMEX">
       </perspective>
    </extension>
    <extension
          point="org.eclipse.e4.ui.css.swt.theme">
       <theme
             basestylesheeturi="css/default.css"
-            id="CAR Tool.window7_theme_id"
+            id="PHULIMEX Tool.window7_theme_id"
             label="Theme1">
       </theme>
    </extension>
@@ -2212,85 +2212,85 @@
          point="org.eclipse.ui.preferencePages">
       <page
             class="preferencepage.AutoFill"
-            id="CAR Tool.page13"
+            id="PHULIMEX Tool.page13"
             name="Autofill">
       </page>
       <page
             class="preferencepage.ChangeHistoryPreferencePage"
-            id="CAR Tool.page19"
+            id="PHULIMEX Tool.page19"
             name="Change History">
       </page>
       <page
             class="preferencepage.DefaultValue"
-            id="CAR Tool.DefaultValue"
+            id="PHULIMEX Tool.DefaultValue"
             name="Default Values">
       </page>
      <!--page	#HLTC85
             class="preferencepage.DesignHierarchy"
-            id="CAR Tool.page16"
+            id="PHULIMEX Tool.page16"
             name="Design Hierarchy">
       </page-->
       <page
             class="preferencepage.DocumentNumber"
-            id="CAR Tool.page10"
+            id="PHULIMEX Tool.page10"
             name="Document Name">
       </page>
       <page
             class="preferencepage.DocumentStatusText"
-            id="CAR Tool.page10"
+            id="PHULIMEX Tool.page10"
             name="Document Status">
       </page>
       <page
             class="preferencepage.ErrorLog"
-            id="CAR Tool.page10"
+            id="PHULIMEX Tool.page10"
             name="Error Logs">
       </page>
        <!-- P3R169-->
       <page
       		class="preferencepage.ExportSettings"
-      		id="CAR Tool.ExportType"
+      		id="PHULIMEX Tool.ExportType"
       		name="Export Analysis Type" >
        </page>
       <page
             class="preferencepage.Filter"
-            id="CAR Tool.FilterPage"
+            id="PHULIMEX Tool.FilterPage"
             name="Filters">
       </page>
       <page
             class="preferencepage.FITCharacteristics"
-            id="CAR Tool.page3"
+            id="PHULIMEX Tool.page3"
             name="ID tags">
       </page>
      <!-- LMTS_21 by parthesh -->
       <page
            class="preferencepage.LibraryLicencePopup"
-           id="CAR Tool.LibraryLicencePopup"
+           id="PHULIMEX Tool.LibraryLicencePopup"
            name="Licence Pop Up">
      </page>
      <!-- P3R206-->
       <page
       		class="preferencepage.LoginCheck"
-            id="CAR Tool.LoginSettings"
+            id="PHULIMEX Tool.LoginSettings"
             name="Login Screen">
       </page>
       <page
             class="preferencepage.GeneralNumberFormat"
-            id="CAR Tool.page1"
+            id="PHULIMEX Tool.page1"
             name="Number Format">
       </page>
       <page
             class="preferencepage.GeneralPopup"
-            id="CAR Tool.page11"
+            id="PHULIMEX Tool.page11"
             name="Pop Ups">
       </page>
       <page
             class="preferencepage.ExclusiveSelectionPreferencePage"
-            id="CAR Tool.quickselection"
+            id="PHULIMEX Tool.quickselection"
             name="Selection">
       </page>
       <page
             class="preferencepage.Theme"
-            id="CAR Tool.page1"
+            id="PHULIMEX Tool.page1"
             name="Theme">
       </page>
    </extension>
@@ -2305,7 +2305,7 @@
          point="org.eclipse.ui.handlers">
       <handler
             class="handler.AddHandler"
-            commandId="CAR Tool.Add">
+            commandId="PHULIMEX Tool.Add">
          <activeWhen>
             <or>
                <with
@@ -2326,7 +2326,7 @@
       <!--Multiple Window-->
       <handler
       		class="handler.NewWindowHandler"
-      		commandId="CAR Tool.NewWindow">
+      		commandId="PHULIMEX Tool.NewWindow">
       		 <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2339,7 +2339,7 @@
       
       <handler
       		class="handler.SavePerspectiveHandler"
-      		commandId="CAR Tool.SavePerspective">
+      		commandId="PHULIMEX Tool.SavePerspective">
       		 <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2351,12 +2351,12 @@
       </handler>
       <handler
       		class="handler.DeletePerspectiveHandler"
-      		commandId="CAR Tool.DeletePerspective"> 
+      		commandId="PHULIMEX Tool.DeletePerspective"> 
       </handler>
       <!--Multiple Window-->
       <handler
             class="handler.AssignFIT"
-            commandId="CAR Tool.assignFIT">
+            commandId="PHULIMEX Tool.assignFIT">
          <activeWhen>
             <with
                   variable="activeEditor">
@@ -2368,7 +2368,7 @@
       </handler>
       <handler
             class="handler.RefreshDataHandler"
-            commandId="CAR Tool.refresh">
+            commandId="PHULIMEX Tool.refresh">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2395,7 +2395,7 @@
       </handler>
       <handler
             class="handler.CopyHandler"
-            commandId="CAR Tool.Copy">
+            commandId="PHULIMEX Tool.Copy">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2407,7 +2407,7 @@
       </handler>
       <handler
             class="handler.CutHandler"
-            commandId="CAR Tool.Cut">
+            commandId="PHULIMEX Tool.Cut">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2419,7 +2419,7 @@
       </handler>
       <handler
             class="handler.PasteHandler"
-            commandId="CAR Tool.Paste">
+            commandId="PHULIMEX Tool.Paste">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2447,7 +2447,7 @@
       <!--Jayesh#Redo Undo Handler start-->
       <handler
             class="handler.UndoHandler"
-            commandId="CAR Tool.undo">
+            commandId="PHULIMEX Tool.undo">
 	     <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2459,7 +2459,7 @@
       </handler>
       <handler
             class="handler.RedoHandler"
-            commandId="CAR Tool.redo">
+            commandId="PHULIMEX Tool.redo">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2471,7 +2471,7 @@
       </handler>
        <!--Jayesh#Redo Undo Handler end-->
       <handler
-            commandId="CAR Tool.AnalysisResultEditor">
+            commandId="PHULIMEX Tool.AnalysisResultEditor">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2483,7 +2483,7 @@
       </handler>
       <handler
             class="handler.AnalysisResult_BarchartHandler"
-            commandId="CAR Tool.AnalysisResult_barchartcommand">
+            commandId="PHULIMEX Tool.AnalysisResult_barchartcommand">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2495,7 +2495,7 @@
       </handler>
       <handler
             class="handler.RenameHandler"
-            commandId="CAR Tool.rename">
+            commandId="PHULIMEX Tool.rename">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2508,7 +2508,7 @@
 
       <handler
             class="handler.CustomColumnHandler"
-            commandId="CAR Tool.customColumn">
+            commandId="PHULIMEX Tool.customColumn">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2520,7 +2520,7 @@
       </handler>
       <handler
             class="handler.SearchHandler"
-            commandId="CAR Tool.search">
+            commandId="PHULIMEX Tool.search">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2532,7 +2532,7 @@
       </handler>
       <handler
             class="handler.ExportOnly"
-            commandId="CAR Tool.exportonly">
+            commandId="PHULIMEX Tool.exportonly">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2544,7 +2544,7 @@
       </handler>
       <handler
             class="handler.DeleteHandler"
-            commandId="CAR Tool.Deletecommand">
+            commandId="PHULIMEX Tool.Deletecommand">
          <activeWhen>
             <or>
                <with
@@ -2564,7 +2564,7 @@
       </handler>
       <handler
             class="handler.ImportHandler"
-            commandId="CAR Tool.Import">
+            commandId="PHULIMEX Tool.Import">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2576,7 +2576,7 @@
       </handler>
       <handler
             class="handler.ExportHandler"
-            commandId="CAR Tool.export_Handler">
+            commandId="PHULIMEX Tool.export_Handler">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2588,7 +2588,7 @@
       </handler>
       <handler
             class="handler.FilterColumnHandler"
-            commandId="CAR Tool.FilterColumn">
+            commandId="PHULIMEX Tool.FilterColumn">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2600,7 +2600,7 @@
       </handler>
       <handler
             class="handler.FilterColumnHandler"
-            commandId="CAR Tool.FilterColumn">
+            commandId="PHULIMEX Tool.FilterColumn">
          <activeWhen>
             <with
                   variable="activeEditor">
@@ -2612,7 +2612,7 @@
       </handler>
       <handler
             class="handler.AddFilterHandler"
-            commandId="CAR Tool.addFilter">
+            commandId="PHULIMEX Tool.addFilter">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2624,7 +2624,7 @@
       </handler>
       <handler
             class="handler.AddFilterHandler"
-            commandId="CAR Tool.addFilter">
+            commandId="PHULIMEX Tool.addFilter">
          <activeWhen>
             <with
                   variable="activeEditor">
@@ -2636,7 +2636,7 @@
       </handler>
       <handler
             class="handler.ExportOnly"
-            commandId="CAR Tool.exportonly">
+            commandId="PHULIMEX Tool.exportonly">
          <activeWhen>
             <with
                   variable="activeEditor">
@@ -2648,7 +2648,7 @@
       </handler>
       <handler
             class="handler.LicenseControllerHandler"
-            commandId="CAR Tool.EmbeddedComand">
+            commandId="PHULIMEX Tool.EmbeddedComand">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2659,7 +2659,7 @@
       </handler>
       <handler
             class="handler.EmbeddedControllerRefresh"
-            commandId="CAR Tool.embedded_controller_refresh">
+            commandId="PHULIMEX Tool.embedded_controller_refresh">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2671,7 +2671,7 @@
       </handler>
       <handler
             class="handler.QuickEditHandler"
-            commandId="CAR Tool.QuickeditCommand">
+            commandId="PHULIMEX Tool.QuickeditCommand">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2683,7 +2683,7 @@
       </handler>
       <handler
             class="handler.ExportScreenShotImageHandler"
-            commandId="CAR Tool.ExportToImage">
+            commandId="PHULIMEX Tool.ExportToImage">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2695,7 +2695,7 @@
       </handler>
       <handler
             class="handler.ExportScreenShotPDFHandler"
-            commandId="CAR Tool.ExportToPDF">
+            commandId="PHULIMEX Tool.ExportToPDF">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2708,7 +2708,7 @@
       </handler>
       <handler
             class="handler.FullScreenShortHandler"
-            commandId="CAR Tool.FullScreenshot">
+            commandId="PHULIMEX Tool.FullScreenshot">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2721,7 +2721,7 @@
       </handler>
       <handler
             class="handler.ImageFullScreenShotHandler"
-            commandId="CAR Tool.ImageFullScreenshot">
+            commandId="PHULIMEX Tool.ImageFullScreenshot">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2734,7 +2734,7 @@
       </handler>
       <handler
             class="handler.Copy_EntireEntryHandler"
-            commandId="CAR Tool.Copy_EntireEntry">
+            commandId="PHULIMEX Tool.Copy_EntireEntry">
          <activeWhen>
             <with
                   variable="activePart">
@@ -2746,11 +2746,11 @@
       </handler>
       <handler
             class="handler.Blank_Handler"
-            commandId="CAR Tool.blankHandler"> 
+            commandId="PHULIMEX Tool.blankHandler"> 
        </handler>
       <handler
             class="handler.ExportHTMLHeandler"
-            commandId="CAR Tool.export_html">
+            commandId="PHULIMEX Tool.export_html">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2762,7 +2762,7 @@
       </handler>
       <handler
             class="handler.ExportCSVHandler"
-            commandId="CAR Tool.exportCSV">
+            commandId="PHULIMEX Tool.exportCSV">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2774,7 +2774,7 @@
       </handler>
       <handler
             class="handler.ExportTSVHandler"
-            commandId="CAR Tool.exportTSV">
+            commandId="PHULIMEX Tool.exportTSV">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2787,36 +2787,36 @@
         <!--P3R122-->
       <handler
             class="handler.AutoRefreshHandler"
-            commandId="CAR Tool.AutoRefreshCommand">
+            commandId="PHULIMEX Tool.AutoRefreshCommand">
          
       </handler>
       <!--P3R122-->
       <handler
             class="handler.ManualRefreshHandler"
-            commandId="CAR Tool.ManualRefreshCommand">
+            commandId="PHULIMEX Tool.ManualRefreshCommand">
          
       </handler>
       <!--P3R122-->
       <handler
             class="handler.AutoRefreshHandler"
-            commandId="CAR Tool.DataChangeAutoCommand">
+            commandId="PHULIMEX Tool.DataChangeAutoCommand">
          
       </handler>
       <!--P3R122-->
       <handler
             class="handler.ManualRefreshHandler"
-            commandId="CAR Tool.DataChangeManualCommand">
+            commandId="PHULIMEX Tool.DataChangeManualCommand">
          
       </handler>
      <!--P3R32-->
       <handler
             class="handler.LineWrapHandler"
-            commandId="CAR Tool.LineWrapCommand">
+            commandId="PHULIMEX Tool.LineWrapCommand">
          
       </handler>
        <handler
             class="handler.LineWrapHandler"
-            commandId="CAR Tool.LineUnWrapCommand">
+            commandId="PHULIMEX Tool.LineUnWrapCommand">
          
       </handler>
     <!--P3R32-->
@@ -2824,13 +2824,13 @@
     <!--P3R219-->
       <handler
             class="handler.AutoSizeHandler"
-            commandId="CAR Tool.AutoSizeCommand">
+            commandId="PHULIMEX Tool.AutoSizeCommand">
          
       </handler>     
     
       <handler
             class="handler.BackupData"
-            commandId="CAR Tool.BackupData">
+            commandId="PHULIMEX Tool.BackupData">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2842,7 +2842,7 @@
       </handler>
       <handler
             class="handler.RestoreData"
-            commandId="CAR Tool.RestoreData">
+            commandId="PHULIMEX Tool.RestoreData">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2854,7 +2854,7 @@
       </handler>
         <handler
             class="handler.MigrateDataHandler"
-            commandId="CAR Tool.MigrateData">
+            commandId="PHULIMEX Tool.MigrateData">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2867,7 +2867,7 @@
      
       <handler
             class="handler.SnapsortHandler"
-            commandId="CAR Tool.SnapsortHanlder">
+            commandId="PHULIMEX Tool.SnapsortHanlder">
          <enabledWhen>
             <with
                   variable="activeWorkbenchWindow">
@@ -2893,35 +2893,35 @@
    <extension
          point="org.eclipse.ui.views.properties.tabbed.propertyTabs">
       <propertyTabs
-            contributorId="CAR Tool.propertyContributorTab">
+            contributorId="PHULIMEX Tool.propertyContributorTab">
          <propertyTab
                afterTab="com.editor.CoverSheet"
-               category="CAR Tool.HardwareElements"
-               id="car.view.HardwareElements"
+               category="PHULIMEX Tool.HardwareElements"
+               id="PHULIMEX.view.HardwareElements"
                label="Design Hierarchy">
          </propertyTab>
          <propertyTab
                afterTab="views.ErrorLogs"
-               category="CAR Tool.CoverSheet"
+               category="PHULIMEX Tool.CoverSheet"
                id="com.editor.CoverSheet"
                label="Coversheet">
          </propertyTab>
          <propertyTab
                afterTab="views.ErrorLogs"
-               category="CAR Tool.ParameterConfiguration"
+               category="PHULIMEX Tool.ParameterConfiguration"
                id="phulimex.editor.ParameterConfiguration"
                label="ParameterConfiguration">
          </propertyTab>
          <propertyTab
-               afterTab="car.view.FaultCharacterisation_FM"
-               category="CAR Tool.FaultCharacterisations"
+               afterTab="PHULIMEX.view.FaultCharacterisation_FM"
+               category="PHULIMEX Tool.FaultCharacterisations"
                id="phulimex.editor.FaultCharacterisations"
                label="Fault Characterisations">
          </propertyTab>
          <propertyTab
                afterTab="views.ErrorLogs"
-               category="CAR Tool.FaultCharacterisation_FM"
-               id="car.view.FaultCharacterisation_FM"
+               category="PHULIMEX Tool.FaultCharacterisation_FM"
+               id="PHULIMEX.view.FaultCharacterisation_FM"
                label="FM_List">
          </propertyTab>
       </propertyTabs>
@@ -2930,11 +2930,11 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            application="CAR.application"
-            name="CAR">
+            application="PHULIMEX.application"
+            name="PHULIMEX">
          <property
                name="appName"
-               value="CAR">
+               value="PHULIMEX">
          </property>
          <property
                name="windowImages"

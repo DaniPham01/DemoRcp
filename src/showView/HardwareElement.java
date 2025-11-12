@@ -13,7 +13,7 @@ import common.Constant;
 
 public class HardwareElement extends AbstractHandler {
 
-    public static final String ID = "CAR Tool.HardwareElementView";
+    public static final String ID = "PHULIMEX Tool.HardwareElementView";
     private final Constant constant = Constant.getInstance();
 
     @Override

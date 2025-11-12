@@ -16,7 +16,7 @@ import views.SaveSearchView;
 
 public class AnalysisResultHandler extends AbstractHandler  
 {
-	public static String ID = "CAR Tool.AnalysisResultcommand";
+	public static String ID = "PHULIMEX Tool.AnalysisResultcommand";
 	 private Constant constant = Constant.getInstance();
 	@Override
 

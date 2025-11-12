@@ -11,7 +11,7 @@ import org.eclipse.ui.PlatformUI;
 import common.Constant;
 
 public class SavedSearchView extends AbstractHandler{
-	public static String ID = "CAR Tool.SavedSearchView";
+	public static String ID = "PHULIMEX Tool.SavedSearchView";
 	private Constant constant = Constant.getInstance();
 	@Override
 	public Object execute(ExecutionEvent arg0) throws ExecutionException{

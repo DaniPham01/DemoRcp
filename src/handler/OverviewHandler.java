@@ -15,7 +15,7 @@ import views.SaveSearchView;
 
 
 public class OverviewHandler extends AbstractHandler {
-	  public static String ID = "CAR Tool.overviewHandler";
+	  public static String ID = "PHULIMEX Tool.overviewHandler";
 	  private Constant constant = Constant.getInstance();
 	@Override
 	public Object execute(ExecutionEvent arg0) throws ExecutionException{

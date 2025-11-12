@@ -11,7 +11,7 @@ import org.eclipse.ui.PlatformUI;
 import common.Constant;
 
 public class ErrorLogView extends AbstractHandler{
-	public static String ID = "CAR Tool.ErrorLogView";
+	public static String ID = "PHULIMEX Tool.ErrorLogView";
 	private Constant constant = Constant.getInstance();
 	@Override
 	public Object execute(ExecutionEvent arg0) throws ExecutionException{

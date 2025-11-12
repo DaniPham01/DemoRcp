@@ -15,7 +15,7 @@ import editors.VariantsInput;
 
 
 public class VariantsHandler extends AbstractHandler  {
-	  public static String ID = "CAR Tool.Variants";
+	  public static String ID = "PHULIMEX Tool.Variants";
 	  private Constant constant = Constant.getInstance();
 
 	@Override

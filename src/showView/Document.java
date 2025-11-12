@@ -11,7 +11,7 @@ import org.eclipse.ui.PlatformUI;
 import common.Constant;
 
 public class Document extends AbstractHandler{
-	public static String ID = "CAR Tool.DocumentViewOpenCommand";
+	public static String ID = "PHULIMEX Tool.DocumentViewOpenCommand";
 	private Constant constant = Constant.getInstance();
 	@Override
 	public Object execute(ExecutionEvent arg0) throws ExecutionException {

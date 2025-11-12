@@ -26,7 +26,7 @@ public class Application implements IApplication {
 
 		
 		if (!ApplicationInstanceManager.registerInstance()) {
-            MessageDialog.openInformation(new Shell(), "Information","CAR Tool cannot be launched as one instance of the CAR Tool is already running. \nKindly click OK to exit.");
+            MessageDialog.openInformation(new Shell(), "Information","PHULIMEX Tool cannot be launched as one instance of the PHULIMEX Tool is already running. \nKindly click OK to exit.");
             return IApplication.EXIT_OK;
 		}
 		

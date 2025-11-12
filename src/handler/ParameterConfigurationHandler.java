@@ -13,7 +13,7 @@ import editors.ParameterConfigurationsInput;
 
 
 public class ParameterConfigurationHandler extends AbstractHandler   {
-	 public static String ID = "CAR Tool.ParameterConfigurationcommand";
+	 public static String ID = "PHULIMEX Tool.ParameterConfigurationcommand";
 	 private Constant constant = Constant.getInstance();
 	@Override
 	public Object execute(ExecutionEvent arg0) throws ExecutionException {
